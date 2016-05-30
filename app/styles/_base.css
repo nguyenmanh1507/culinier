@@ -1,0 +1,22 @@
+/* Import Normalize.css v 4.1.1 */
+@import '../../bower_components/normalize-css/normalize.css';
+
+html {
+  font-size: $base;
+}
+
+body {
+  box-sizing: border-box;
+
+  font-family: $fontPrimary;
+  font-size: 1rem;
+  color: $colorText;
+
+  background: $colorWhite;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
