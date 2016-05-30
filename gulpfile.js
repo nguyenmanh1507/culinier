@@ -178,7 +178,10 @@ gulp.task('serve', ['views', 'views:pattern', 'styles', 'scripts', 'fonts'], () 
     '!app/patterns_library/*.jade',
     '!app/layouts/patternsLibrary.jade'
   ], ['views']);
-  gulp.watch(['app/patterns_library/*.jade', 'app/layouts/patternsLibrary.jade'], ['views:pattern']);
+  gulp.watch([
+    'app/patterns_library/*.jade',
+    'app/layouts/patternsLibrary.jade'
+  ], ['views:pattern']);
   gulp.watch('app/styles/**/*.css', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
@@ -218,7 +221,7 @@ gulp.task('serve:test', ['scripts'], () => {
 gulp.task('wiredep', () => {
   gulp.src('app/layouts/*.jade')
     .pipe(wiredep({
-      exclude: ['bootstrap.js'],
+      exclude: ['bootstrap.js', '/bower_components/bootstrap'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));

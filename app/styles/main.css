@@ -1,6 +1,7 @@
 
 @import 'settings';
 @import 'base';
+@import 'bootstrap-grid';
 
 .browserupgrade {
   margin: 0.2em 0;
