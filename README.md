@@ -4,6 +4,10 @@
 
 - [ ] Navigation dropdown
 
+## Notes
+
+* Responsive pattern: Mobile first
+
 ## Others
 
 Additions dev tool plugins
