@@ -1,6 +1,10 @@
 # Culinier - Food recipes Magazine.
 
-# Others
+## Todos
+
+- [] Navigation dropdown
+
+## Others
 
 Additions dev tool plugins
 
