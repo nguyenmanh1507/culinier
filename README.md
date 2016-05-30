@@ -8,6 +8,10 @@
 
 * Responsive pattern: Mobile first
 
+## 3-rd plugins
+
+* Slider: [Slick](http://kenwheeler.github.io/slick/)
+
 ## Others
 
 Additions dev tool plugins
