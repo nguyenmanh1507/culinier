@@ -17,6 +17,14 @@ gulp.task('views', () => {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('views:pattern', () => {
+  return gulp.src(['app/patterns_library/*.jade', 'app/layouts/patternsLibrary.jade'])
+    .pipe($.plumber())
+    .pipe($.jade({pretty: true}))
+    .pipe(gulp.dest('.tmp/patterns_library'))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('styles', () => {
   const
     assets       = require('postcss-assets'),
@@ -107,7 +115,7 @@ gulp.task('lint:test', () => {
     .pipe(gulp.dest('test/spec/**/*.js'));
 });
 
-gulp.task('html', ['views', 'styles', 'scripts'], () => {
+gulp.task('html', ['views', 'views:pattern', 'styles', 'scripts'], () => {
   return gulp.src(['app/*.html', '.tmp/*.html'])
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
@@ -147,7 +155,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['views', 'styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['views', 'views:pattern', 'styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -165,7 +173,12 @@ gulp.task('serve', ['views', 'styles', 'scripts', 'fonts'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch('app/**/*.jade', ['views']);
+  gulp.watch([
+    'app/**/*.jade',
+    '!app/patterns_library/*.jade',
+    '!app/layouts/patternsLibrary.jade'
+  ], ['views']);
+  gulp.watch(['app/patterns_library/*.jade', 'app/layouts/patternsLibrary.jade'], ['views:pattern']);
   gulp.watch('app/styles/**/*.css', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);

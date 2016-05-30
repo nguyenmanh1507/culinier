@@ -2,7 +2,7 @@ doctype html
 html.no-js(lang="")
   head
     meta(charset="utf-8")
-    title Culinier
+    title Pattern Library
     meta(name="description" content="")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
@@ -10,12 +10,11 @@ html.no-js(lang="")
 
     // build:css styles/vendor.css
     // bower:css
-    link(rel='stylesheet', href='/bower_components/normalize-css/normalize.css')
     // endbower
     // endbuild
 
     // build:css styles/main.css
-    link(rel="stylesheet" href="styles/main.css")
+    link(rel="stylesheet" href="../styles/main.css")
     // endbuild
 
     // build:js scripts/vendor/modernizr.js
@@ -23,7 +22,7 @@ html.no-js(lang="")
     // endbuild
     
   body
-    
+    header: h1 Patterns Library
     block content
   
   
@@ -39,10 +38,9 @@ html.no-js(lang="")
     // build:js scripts/vendor.js
     // bower:js
     script(src='/bower_components/jquery/dist/jquery.js')
-    script(src='/bower_components/modernizr/modernizr.js')
     // endbower
     // endbuild
     
     // build:js scripts/main.js
-    script(src='scripts/main.js')
+    script(src='../scripts/main.js')
     // endbuild
