@@ -12,6 +12,15 @@ $fontSecondary: 'Dosis', sans-serif;
 $fontSpecial: 'Vidaloka', serif;
 
 /* Colors */
+$colorPrimary: #f8a631;
 $colorText: #2b2b2b;
 $colorTextLight: #999999;
 $colorWhite: #ffffff;
+$colorBlack: #000000;
+
+/* Media query */
+@custom-media --small-up (min-width: 768px);
+@custom-media --medium-up (min-width: 992px);
+@custom-media --large-up (min-width: 1200px);
+
+@custom-media --nav-desktop (min-width: 992px);

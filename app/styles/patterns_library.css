@@ -1,3 +1,7 @@
+@import 'settings';
+
 .pt-dark-bg {
+  padding: 5px;
+  
   background: $colorText;
 }

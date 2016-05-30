@@ -12,10 +12,13 @@ html.no-js(lang="")
     // bower:css
     // endbower
     // endbuild
-
+  
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+    
     // build:css styles/main.css
     link(rel="stylesheet", href="../styles/patterns_library.css")
-    link(rel="stylesheet" href="../styles/main.css")
+    link(rel="stylesheet", href="../styles/main.css")
     // endbuild
 
     // build:js scripts/vendor/modernizr.js
@@ -39,12 +42,16 @@ html.no-js(lang="")
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
+      
   
     // build:js scripts/vendor.js
     // bower:js
     script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
     // endbower
     // endbuild
+    
+    script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
     
     // build:js scripts/main.js
     script(src='../scripts/main.js')

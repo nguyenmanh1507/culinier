@@ -1,0 +1,105 @@
+.carousel {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    size: 100% 1px;
+
+    background-image: repeating-linear-gradient(90deg, color($colorWhite a(50%)), color($colorWhite a(50%)) 8px, transparent 8px, transparent 16px);
+
+    z-index: 5;
+  }
+
+  &::before {
+    top: calc($base / 2);
+  }
+
+  &::after {
+    bottom: calc($base / 2);
+  }
+}
+
+.carousel-cell {
+  position: relative;
+  z-index: 5;
+
+  .carousel-text {
+    position: absolute 50% auto auto;
+
+    width: 100%;
+
+    color: $colorWhite;
+    text-align: center;
+
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute 0;
+
+    background: color($colorBlack a(40%));
+  }
+}
+
+.slick-arrow,
+.slick-dots {
+  position: absolute;
+  z-index: 10;
+}
+
+.slick-arrow {
+  top: 50%;
+
+  size: calc($base * 2) calc($base * 6);
+
+  color: $colorWhite;
+
+  border: none;
+  background: color($colorBlack a(80%));
+  transform: translateY(-50%);
+}
+
+.slick-arrow:first-of-type {
+  left: 0;
+}
+
+.slick-arrow:last-of-type {
+  right: 0;
+}
+
+.slick-dots {
+  bottom: calc($base * 1.5);
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  list-style: none;
+
+  li {
+    display: inline-block;
+    size: 9px;
+    margin: 0 calc($base / 2);
+
+    border-radius: 50%;
+    background: $colorWhite;
+
+    button {
+      @extend sr-only;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.slick-active {
+      box-shadow: 0 0 0 4px color($colorBlack a(80%));
+    }
+  }
+}

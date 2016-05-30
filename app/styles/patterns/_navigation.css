@@ -1,0 +1,60 @@
+@b site-nav {
+  font-family: $fontSecondary;
+
+  a {
+    color: $colorWhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  @e brand {
+    margin: 0;
+
+    @media (--nav-desktop) {
+      flex-grow: 1;
+    }
+  }
+
+  @e nav {
+    /*flex-grow: 1;*/
+  }
+
+  @e list {
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: $base;
+      
+      list-style: none;
+
+      &.dropdown {
+        > ul {
+          display: none;
+        }
+
+        > a::after {
+          margin-left: calc($base / 2);
+
+          font-family: 'FontAwesome';
+          content: '\f0d7';
+          color: $colorPrimary;
+        }
+      }
+    }
+
+    @media (--nav-desktop) {
+      display: flex;
+      justify-content: space-between;
+
+      > li {
+        margin-left: calc($base * 2);
+      }
+    }
+  }
+
+  @media (--nav-desktop) {
+    display: flex;
+  }
+}

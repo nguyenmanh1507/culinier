@@ -3,6 +3,8 @@
 @import 'base';
 @import 'typography';
 @import 'bootstrap-grid';
+@import 'helpers/extends';
+@import 'patterns/all';
 
 .browserupgrade {
   margin: 0.2em 0;
