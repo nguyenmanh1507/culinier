@@ -1,0 +1,15 @@
+.text-large {
+  font-size: 1.563rem; /* equal h2 font-size */
+}
+
+.text-small {
+  font-size: 0.8rem; /* equal h5,h6 font-size */
+}
+
+.text-light {
+  color: $colorTextLight;
+}
+
+.text-invert-color {
+  color: $colorWhite;
+}
