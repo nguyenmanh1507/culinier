@@ -71,7 +71,7 @@ gulp.task('styles', () => {
       autoprefixer
     ]
   ;
-  return gulp.src('app/styles/main.css')
+  return gulp.src(['app/styles/main.css', 'app/styles/patterns_library.css'])
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.postcss(processors))
@@ -221,10 +221,14 @@ gulp.task('serve:test', ['scripts'], () => {
 gulp.task('wiredep', () => {
   gulp.src('app/layouts/*.jade')
     .pipe(wiredep({
-      exclude: ['bootstrap.js', '/bower_components/bootstrap'],
+      exclude: [
+        'bootstrap.js',
+        '/bower_components/bootstrap',
+        '/bower_components/normalize-css'
+      ],
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe(gulp.dest('app'));
+    .pipe(gulp.dest('app/layouts'));
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
