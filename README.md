@@ -2,7 +2,7 @@
 
 ## Todos
 
-- [] Navigation dropdown
+- [ ] Navigation dropdown
 
 ## Others
 
