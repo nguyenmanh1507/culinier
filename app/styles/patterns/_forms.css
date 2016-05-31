@@ -1,0 +1,122 @@
+@b form {
+  padding: $base;
+
+  background: $colorGrayLight;
+
+  label {
+    font-size: responsive 0.75rem 1rem;
+    font-range: $bpSmall $bpMedium;
+    font-weight: 700;
+    vertical-align: top;
+
+    /* Fake checkbox */
+    &.label-checkbox::before {
+      content: '';
+      font-family: 'FontAwesome';
+
+      display: inline-block;
+      size: $base;
+      margin-right: calc($base / 2);
+
+
+      font-size: calc($base * .8);
+      text-align: center;
+      color: $colorPrimary;
+      vertical-align: top;
+
+      background: $colorWhite;
+      border: 1px solid $colorBorder;
+    }
+
+    small {
+      font-weight: 400;
+      color: $colorTextLight;
+      vertical-align: super;
+
+      @media (--small-up) {
+        vertical-align: baseline;
+      }
+    }
+  }
+
+  .checkbox {
+    display: none;
+
+    &:checked + label::before {
+      content: '\f00c';
+    }
+  }
+
+  @e control {
+    display: block;
+    width: 100%;
+    margin: calc($base / 4) 0 calc($base * 1.5);
+    padding: calc($base / 2);
+
+    border: 1px solid $colorBorder;
+    outline: none;
+
+    &:focus,
+    &:hover {
+      border-color: $colorPrimary;
+    }
+  }
+
+  @e sep {
+    position: relative;
+
+    size: 100% 2px;
+    margin: calc($base * 2) 0;
+
+    border-top: 1px solid $colorBorder;
+    border-bottom: 1px solid $colorWhite;
+
+    span {
+      position: absolute 50% auto auto 50%;
+
+      padding: 0 $base;
+
+      font-weight: 700;
+
+      transform: translate(-50%, -50%);
+      background: $colorGrayLight;
+    }
+  }
+
+  /* Split element equaly */
+  @m se {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .form__group:first-of-type {
+      flex-grow: 1;
+    }
+  }
+
+  /* Button styles only inside form */
+  .facebook,
+  .twitter {
+    margin-bottom: $base;
+
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  .facebook {
+    background: #3b5998;
+  }
+
+  .twitter {
+    background: #00aced;
+  }
+  /* End */
+
+  @media (--medium-up) {
+    padding: calc($base * 2);
+  }
+
+  @media (--large-up) {
+    padding: calc($base * 3);
+  }
+}

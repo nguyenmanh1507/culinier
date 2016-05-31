@@ -26,23 +26,41 @@
   position: relative;
   z-index: 5;
 
-  .carousel-text {
-    position: absolute 50% auto auto;
-
-    width: 100%;
-
-    color: $colorWhite;
-    text-align: center;
-
-    transform: translateY(-50%);
-  }
-
   &::before {
     content: '';
     position: absolute 0;
 
     background: color($colorBlack a(40%));
   }
+}
+
+.carousel-text {
+  position: absolute 50% auto auto;
+
+  width: 100%;
+
+  color: $colorWhite;
+  text-align: center;
+
+  transform: translateY(-50%);
+}
+
+.carousel-h {
+  margin: 0;
+
+  font-size: responsive 24px 64px;
+  font-range: $bpSmall $bpLarge;
+  font-weight: 800;
+}
+
+.carousel-sub-h {
+  margin: $base 0 calc($base * 2);
+
+  font-family: $fontSpecial;
+  font-size: responsive 0.8rem 1.13rem;
+  font-range: $bpSmall $bpMedium;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .slick-arrow,

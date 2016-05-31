@@ -13,3 +13,11 @@
 .text-invert-color {
   color: $colorWhite;
 }
+
+.text-center { text-align: center; }
+
+/* Text with colors */
+.text-blue { color: $colorBlue; }
+.text-green { color: $colorGreen; }
+.text-red { color: $colorRed; }
+.text-orange { color: $colorPrimary !important; }

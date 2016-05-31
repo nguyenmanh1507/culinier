@@ -1,0 +1,44 @@
+@b btn {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+
+  font-size: calc($base * 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $colorWhite;
+
+  box-shadow: inset 1px 1px 0 0 rgba($colorWhite, .2);
+  border: none;
+  border-radius: 1.5em;
+  transition: $transition;
+
+  cursor: pointer;
+
+  @mixin btnBg $colorTextLight;
+
+  @m p {
+    @mixin btnBg $colorBlue;
+  }
+
+  @m s {
+    @mixin btnBg $colorGreen;
+  }
+
+  @m w {
+    @mixin btnBg $colorPrimary;
+  }
+
+  @m e {
+    @mixin btnBg $colorRed;
+  }
+
+  @m lg {
+    font-size: $base;
+  }
+
+  @m b {
+    display: block;
+    width: 100%;
+  }
+}

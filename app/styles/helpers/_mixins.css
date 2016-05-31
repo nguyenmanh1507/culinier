@@ -1,0 +1,8 @@
+@define-mixin btnBg $bgColor {
+  background: $bgColor;
+
+  &:focus,
+  &:hover {
+    background: color($bgColor shade(20%));
+  }
+}

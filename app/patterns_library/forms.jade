@@ -1,0 +1,109 @@
+extends ../layouts/patternsLibrary
+
+block content
+  
+  .container
+    .row
+      .col-xs-12
+        h2 Forms
+        
+        .row
+          .col-xs-12.col-md-push-2.col-md-8
+            
+            .page-header.text-center
+              h2 Login
+            
+            form.form(action="")
+              .form__group
+                label(for="field1") Username
+                input.form__control#field1(type="text", name="field1")
+              
+              .form__group
+                label(for="field2") Password
+                input.form__control#field2(type="password", name="field2")
+                
+              .form--se
+                .form__group
+                  input.checkbox#field3(type="checkbox", name="field3")
+                  label.label-checkbox.text-small.text-light(for="field3") Remember me
+                  
+                .form__group
+                  button.btn.btn--w(type="submit") Login
+                  
+        .row
+          .col-xs-12.col-md-push-2.col-md-8
+            
+            .page-header.text-center
+              h2 Register
+              small If you don’t have account yet
+            
+            form.form(action="")
+              .form__group
+                label(for="field4") Username
+                input.form__control#field4(type="text", name="field4")
+              
+              .form__group
+                label(for="field5") Password
+                input.form__control#field5(type="password", name="field5")
+                
+              .form--se
+                .form__group
+                  
+                .form__group
+                  button.btn.btn--w(type="submit") Register
+                  
+              .form__sep
+                span OR
+                
+              .row
+                .col-sm-12.col-md-6
+                  a.btn.btn--b.btn--lg.facebook(href="#") Sign up via Facebook
+                  
+                .col-sm-12.col-md-6
+                  a.btn.btn--b.btn--lg.twitter(href="#") Sign up via Twitter
+                  
+        .row
+          .col-sm-12
+          
+            .page-header.text-center
+              h2 Contact form
+            
+            form.form(action="")
+              .page-header.text-center
+                h3 Simply leave a message here
+                small Please fill out our form below and we'll contact you as soon as possible.
+                
+              .row
+                .col-sm-12.col-md-4
+                  .form__group
+                    label(for="field6") Name <small>(ex: Ricardo)</small>
+                    input.form__control#field6(type="text", name="field6")
+                
+                .col-sm-12.col-md-4
+                  .form__group
+                    label(for="field7") Email <small>(Not Published)</small>
+                    input.form__control#field7(type="email", name="field7")
+                
+                .col-sm-12.col-md-4
+                  .form__group
+                    label(for="field8") Website <small>(Optional)</small>
+                    input.form__control#field8(type="url", name="field8")
+                
+                .col-sm-12
+                  .form__group
+                    label(for="field9") Subject
+                    input.form__control#field9(type="text", name="field9")
+                    
+                .col-sm-12
+                  .form__group
+                    label(for="field10") Message
+                    textarea#field10.form__control(name="field10", cols="30", rows="10")
+                    
+              .form--se
+                .form__group
+                  input.checkbox#field11(type="checkbox", checked)
+                  label.label-checkbox.text-light(for="field11") Send a copy of this message to my email
+                  
+                .form__group
+                  button.btn.btn--w(type="submit") Send Message
+                  

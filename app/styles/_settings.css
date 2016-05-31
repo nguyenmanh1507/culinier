@@ -17,10 +17,26 @@ $colorText: #2b2b2b;
 $colorTextLight: #999999;
 $colorWhite: #ffffff;
 $colorBlack: #000000;
-
+$colorBlue: #45b5f5;
+$colorRed: #c0392b;
+$colorGreen: #2ecc71;
+$colorBorder: #dcdcdc;
+$colorGrayLight: #f4f4f4;
 /* Media query */
+
+/* Breakpoint variables */
+$bpSmall: 768px;
+$bpMedium: 992px;
+$bpLarge: 1200px;
+
+/* Can't use var in custom media
+   Use px unit instead
+ */
 @custom-media --small-up (min-width: 768px);
 @custom-media --medium-up (min-width: 992px);
 @custom-media --large-up (min-width: 1200px);
 
 @custom-media --nav-desktop (min-width: 992px);
+
+/* Transition */
+$transition: all 0.2s ease-in-out-quad;

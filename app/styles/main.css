@@ -3,7 +3,7 @@
 @import 'base';
 @import 'typography';
 @import 'bootstrap-grid';
-@import 'helpers/extends';
+@import 'helpers/all';
 @import 'patterns/all';
 
 .browserupgrade {

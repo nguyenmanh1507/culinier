@@ -1,0 +1,157 @@
+@b card {
+  background: $colorWhite;
+  border: 1px solid $colorBorder;
+
+  @e thumb {
+    display: block;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  @e cta-btn {
+    display: block;
+    padding: 0.8em 1.5em;
+
+    color: $colorText;
+    font-size: calc($base * .8);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    background: $colorWhite;
+    border-bottom: 1px solid $colorBorder;
+
+    transition: $transition;
+
+    &:focus,
+    &:hover {
+      background: color($colorWhite shade(20%));
+    }
+  }
+
+  @e under {
+    padding: $base;
+
+    font-size: calc($base * .8);
+
+    a {
+      color: $colorText;
+      text-decoration: none;
+
+      transition: $transition;
+
+      &:focus,
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+
+  @e name {
+    margin-bottom: calc($base * 2);
+  }
+
+  @e h {
+    margin: 0;
+
+    font-size: calc($base * 1.13);
+  }
+
+  @e meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    color: $colorTextLight;
+
+    li:not(:last-child) {
+      margin-bottom: calc($base / 2);
+    }
+
+    li:first-child {
+      margin-right: calc($base / 2);
+    }
+
+    li:nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+
+  /* Card has no border */
+  @m nb {
+    border: none;
+
+    .card__under {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  /* Card with text center */
+  @m center {
+
+    .card__under {
+      text-align: center;
+    }
+  }
+}
+
+/* Styles for desktop */
+.no-touch {
+
+  @b card {
+
+    @e upper {
+      position: relative;
+
+      &:focus,
+      &:hover {
+        .card__thumb::before,
+        .card__cta-group {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    @e cta-group {
+      position: absolute 50% auto auto 50%;
+
+      text-align: center;
+
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition;
+    }
+
+    @e thumb::before {
+      content: '';
+
+      position: absolute 0;
+
+      background: rgba($colorPrimary, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition;
+    }
+
+    @e cta-btn {
+      display: inline-block;
+      width: 100%;
+
+      border-radius: calc($base * 2);
+      border-bottom: none;
+
+      &:not(:last-child) {
+        margin-bottom: $base;
+      }
+    }
+  }
+}
