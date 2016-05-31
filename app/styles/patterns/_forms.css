@@ -47,6 +47,10 @@
     }
   }
 
+  @e group {
+    margin-bottom: calc($base / 2);
+  }
+
   @e control {
     display: block;
     width: 100%;
