@@ -75,7 +75,7 @@ gulp.task('styles', () => {
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.postcss(processors))
-    .pipe($.cssnano({discardComments: {removeAll: true}}))
+    // .pipe($.cssnano({discardComments: {removeAll: true}}))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
