@@ -1,0 +1,8 @@
+@b l-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  @m center {
+    justify-content: center;
+  }
+}

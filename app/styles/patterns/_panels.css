@@ -1,0 +1,33 @@
+@b panel {
+  position: relative;
+
+  padding: $base;
+
+  background: $colorWhite;
+
+  @e title {
+    margin-top: 0;
+
+    font-family: $fontSpecial;
+    font-style: italic;
+  }
+
+  @e addon {
+    position: absolute 0 0 auto auto;
+
+    size: 100px 100px;
+
+    color: $colorWhite;
+    text-transform: uppercase;
+    line-height: 100px;
+    text-align: center;
+
+    background: $colorBlue;
+    border-radius: 50%;
+    transform: translate(50%, -30%);
+  }
+
+  @media (--medium-up) {
+    padding: calc($base * 2);
+  }
+}

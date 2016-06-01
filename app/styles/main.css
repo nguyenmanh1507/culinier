@@ -1,10 +1,11 @@
 
 @import 'settings';
 @import 'base';
+@import 'helpers/all';
+
 @import 'typography';
 @import 'bootstrap-grid';
 @import 'sites';
-@import 'helpers/all';
 @import 'patterns/all';
 
 .browserupgrade {

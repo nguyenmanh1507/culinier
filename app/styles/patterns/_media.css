@@ -1,0 +1,12 @@
+@b media {
+  clear: fix;
+
+  @e left {
+    float: left;
+    margin-right: $base;
+  }
+
+  @e body {
+    display: table-cell;
+  }
+}

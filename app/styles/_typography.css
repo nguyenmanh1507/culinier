@@ -10,14 +10,85 @@
   color: $colorTextLight;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .text-invert-color {
   color: $colorWhite;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .text-center { text-align: center; }
 
 /* Text with colors */
+.text-dark { color: $colorText; }
 .text-blue { color: $colorBlue; }
 .text-green { color: $colorGreen; }
 .text-red { color: $colorRed; }
 .text-orange { color: $colorPrimary !important; }
+
+/* Lists */
+/* List has underline */
+.list-underline {
+  @extend remove-mpd;
+
+  li {
+    padding: .8em 0;
+
+    border-bottom: 1px solid $colorScorpion;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* List inline */
+.list-inline {
+  @extend remove-mpd;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: calc($base / 2);
+    }
+  }
+}
+
+/* List filter */
+.list-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @extend remove-mpd;
+  font-weight: 600;
+  font-size: .8rem;
+  text-transform: uppercase;
+
+  clear:fix;
+
+  li {
+    border-bottom: 1px solid $colorBorder;
+  }
+
+  a {
+    display: inline-block;
+    padding: calc($base / 2) $base;
+
+    color: $colorTextLight;
+  }
+
+  .active {
+    border-color: $colorText;
+
+    a {
+      color: $colorText;
+    }
+  }
+}

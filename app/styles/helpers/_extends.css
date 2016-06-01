@@ -9,3 +9,10 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Remove padding and margin and dot */
+@define-extend remove-mpd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

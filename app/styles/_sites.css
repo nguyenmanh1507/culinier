@@ -7,4 +7,56 @@
   background: $colorMineShaft;
 }
 
-.site-footer {}
+.site-footer {
+  padding: $base 0 0;
+  background: $colorText;
+}
+
+.site-under {
+  padding: calc($base * 2) 0;
+
+  background: $colorBlack;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.site-footer-nav {
+  @extend remove-mpd;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8rem;
+
+  li {
+    display: inline-block;
+    margin-right: $base;
+    margin-bottom: $base;
+
+    &:not(:last-child)::after {
+      content: '/';
+      padding-left: $base;
+    }
+
+    a {
+      color: $colorWhite;
+    }
+  }
+
+  @media (--medium-up) {
+    text-align: right;
+  }
+}
+
+/* Color only use for footer seperate line */
+$a: #c9dabe;
+$b: #e9e9bc;
+$c: #b89d99;
+$d: #f0868f;
+
+.site-sep {
+  size: 100% 5px;
+
+  background-image: repeating-linear-gradient(90deg, $a, $a 45px, $b 45px, $b 90px, $colorPrimary 90px, $colorPrimary 135px, $c 135px, $c 180px, $d 180px, $d 225px);
+}
