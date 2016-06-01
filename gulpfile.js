@@ -48,7 +48,6 @@ gulp.task('styles', () => {
       }),
       rucksack(),
       shortSize,
-      triangle,
       bem({
         style: 'bem',
         separators: {
@@ -61,6 +60,7 @@ gulp.task('styles', () => {
         }
       }),
       nested,
+      triangle,
       fontMagician,
       pxtorem({
         replace: true,
