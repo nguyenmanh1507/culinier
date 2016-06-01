@@ -3,6 +3,7 @@
 ## Todos
 
 - [ ] Navigation dropdown
+- [ ] Lint Stylesheets using [Stylelint](http://stylelint.io)
 
 ## Notes
 
