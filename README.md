@@ -7,6 +7,10 @@
 - [ ] Search form on header
 - [ ] Editor's choice filter (homepage)
 
+## Bugs
+
+- [x] Social list on avatar display when hover on it
+
 ## Notes
 
 * Responsive pattern: Mobile first
