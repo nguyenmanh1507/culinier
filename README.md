@@ -9,7 +9,7 @@
 
 ## Bugs
 
-- [x] Social list on avatar display when hover on it
+- [x] ~Social list on avatar display when hover on it~
 
 ## Notes
 
