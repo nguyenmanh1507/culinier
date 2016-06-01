@@ -4,6 +4,7 @@
 
 - [ ] Navigation dropdown
 - [ ] Lint Stylesheets using [Stylelint](http://stylelint.io)
+- [ ] Search form on header
 
 ## Notes
 
