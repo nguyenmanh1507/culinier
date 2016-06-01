@@ -5,6 +5,7 @@
 - [ ] Navigation dropdown
 - [ ] Lint Stylesheets using [Stylelint](http://stylelint.io)
 - [ ] Search form on header
+- [ ] Editor's choice filter (homepage)
 
 ## Notes
 
