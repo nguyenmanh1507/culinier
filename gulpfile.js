@@ -46,7 +46,6 @@ gulp.task('styles', () => {
         relative: true,
         cachebuster: true
       }),
-      rucksack(),
       shortSize,
       bem({
         style: 'bem',
@@ -59,6 +58,7 @@ gulp.task('styles', () => {
           modifier: 'm'
         }
       }),
+      rucksack(),
       nested,
       triangle,
       fontMagician,
