@@ -1,0 +1,12 @@
+/* Margin bottom small */
+.mbs { margin-bottom: $base; }
+
+/* Margin bottom medium */
+.mbm { margin-bottom: calc($base * 2); }
+
+/* Margin bottom large */
+.mbl { margin-bottom: calc($base * 3); }
+
+.img-circle {
+  border-radius: 50%;
+}

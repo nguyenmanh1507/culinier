@@ -21,6 +21,15 @@ body {
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0 .4em;
+}
+
 /* Scale: 1.250 - Major Third */
 h1 { font-size: 2.441rem; }
 h2 { font-size: 1.953rem; }

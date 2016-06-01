@@ -1,0 +1,16 @@
+@b well {
+  padding: calc($base * 3) 0;
+
+  @m a {
+    background: $colorGrayLight;
+  }
+
+  @m b {
+    background: $colorScorpion;
+  }
+
+  /* Clear page-header margin top when it inside well */
+  .page-header {
+    margin-top: 0;
+  }
+}

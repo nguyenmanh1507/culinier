@@ -1,0 +1,76 @@
+@b avatar {
+  position: relative;
+  text-align: center;
+
+  @e img {
+    display: block;
+    margin: 0 auto $base;
+
+    border-radius: 50%;
+    border: calc($base / 2) solid $colorGrayLight;
+  }
+
+  @e meta {
+    display: inline-block;
+    padding: calc($base / 2) calc($base * 2);
+    margin-bottom: $base;
+
+    background: $colorText;
+    border-radius: calc($base * 2);
+
+    a {
+      display: inline-block;
+      margin: 0 calc($base / 4);
+      color: $colorWhite;
+      transition: $transition;
+
+      &:focus,
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+
+  @e h {
+    margin: 0;
+
+    font-size: $base;
+    text-transform: uppercase;
+  }
+
+  @e sub-h {
+    font-size: calc($base * .8);
+  }
+}
+
+.no-touch {
+
+  @b avatar {
+
+    @e img:hover + .avatar__meta {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @e meta {
+      position: absolute -32px auto auto 50%;
+
+      width: 100%;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition;
+      transform: translateX(-50%);
+
+      &::before {
+        content: '';
+        position: absolute 100% auto auto 50%;
+
+        triangle: right-iso pointing-down;
+        width: 12px;
+        background-color: $colorText;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

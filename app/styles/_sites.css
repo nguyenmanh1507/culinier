@@ -1,0 +1,10 @@
+/**********************
+ * HOLD GENERAL SECTION OF SITE
+ **********************/
+
+.site-header {
+  padding: $base 0;
+  background: $colorMineShaft;
+}
+
+.site-footer {}

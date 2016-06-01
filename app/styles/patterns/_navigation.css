@@ -16,17 +16,13 @@
     }
   }
 
-  @e nav {
-    /*flex-grow: 1;*/
-  }
-
   @e list {
     padding: 0;
     margin: 0;
 
     li {
       margin-bottom: $base;
-      
+
       list-style: none;
 
       &.dropdown {
@@ -50,11 +46,13 @@
 
       > li {
         margin-left: calc($base * 2);
+        margin-bottom: 0;
       }
     }
   }
 
   @media (--nav-desktop) {
     display: flex;
+    align-items: center;
   }
 }

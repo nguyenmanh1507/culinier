@@ -22,8 +22,10 @@ $colorRed: #c0392b;
 $colorGreen: #2ecc71;
 $colorBorder: #dcdcdc;
 $colorGrayLight: #f4f4f4;
-/* Media query */
+$colorMineShaft: #232323;
+$colorScorpion: #585858;
 
+/* Media query */
 /* Breakpoint variables */
 $bpSmall: 768px;
 $bpMedium: 992px;
