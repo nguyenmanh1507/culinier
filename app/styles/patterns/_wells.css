@@ -1,4 +1,6 @@
 @b well {
+  position: relative;
+
   padding: calc($base * 3) 0;
 
   @m a {
@@ -9,8 +11,32 @@
     background: $colorScorpion;
   }
 
+  @m bg-a {
+    background: $colorScorpion resolve('well-bg/1.jpg') no-repeat;
+  }
+
+  @m bg-b {
+    background: $colorScorpion resolve('well-bg/2.jpg') no-repeat;
+  }
+
+  @m bg-c {
+    background: $colorScorpion resolve('well-bg/3.jpg') no-repeat;
+  }
+
   /* Clear page-header margin top when it inside well */
   .page-header {
     margin-top: 0;
+  }
+}
+
+.well[class*="bg"] {
+  background-size: cover;
+
+  /* Transparent bg for improve readable */
+  &::before {
+    content: '';
+    position: absolute 0;
+
+    background: rgba($colorBlack, .6);
   }
 }
