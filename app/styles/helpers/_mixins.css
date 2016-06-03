@@ -6,3 +6,39 @@
     background: color($bgColor shade(20%));
   }
 }
+
+/* Create hem */
+@define-mixin hem {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+
+    content: '';
+    size: 100% 1px;
+
+    background-image: repeating-linear-gradient(90deg, color($colorWhite a(50%)), color($colorWhite a(50%)) 8px, transparent 8px, transparent 16px);
+
+    z-index: 5;
+  }
+
+  &::before {
+    top: calc($base / 2);
+  }
+
+  &::after {
+    bottom: calc($base / 2);
+  }
+}
+
+/* Transparent bg for improve readable */
+@define-mixin cover {
+  &::before {
+    content: '';
+    position: absolute 0;
+    
+    background: rgba($colorBlack, .6);
+  }
+}

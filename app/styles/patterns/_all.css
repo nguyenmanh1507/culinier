@@ -8,3 +8,5 @@
 @import "avatars";
 @import "media";
 @import "panels";
+@import "breadcrumb";
+@import "banners";

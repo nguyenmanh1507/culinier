@@ -1,0 +1,28 @@
+@b banner {
+  padding: calc($base * 4) 0;
+
+  background: $colorTextLight;
+
+  text-align: center;
+
+  @mixin hem;
+
+  @e h {
+    margin: 0 0 calc($base / 2);
+
+    font-family: $fontSecondary;
+    color: $colorWhite;
+  }
+
+  @e cover {
+    @mixin cover;
+  }
+
+  &[class*="bg"] {
+    background-size: cover;
+  }
+
+  @m bg-a {
+    background: $colorTextLight resolve('well-bg/1.jpg') no-repeat;
+  }
+}

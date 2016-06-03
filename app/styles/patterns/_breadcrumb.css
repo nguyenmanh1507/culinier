@@ -1,0 +1,29 @@
+@b bc {
+  font-family: $fontSpecial;
+  font-style: italic;
+  color: $colorWhite;
+
+  a {
+    color: $colorWhite;
+    transition: $transition;
+
+    &:hover {
+      color: $colorPrimary;
+    }
+  }
+
+  @e item {
+    line-height: 1.2;
+
+    &:not(:last-child) {
+      margin-right: calc($base / 2);
+
+      &::after {
+        content: '/';
+        padding-left: calc($base / 2);
+
+        font-size: .8rem;
+      }
+    }
+  }
+}

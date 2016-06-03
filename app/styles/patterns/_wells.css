@@ -32,11 +32,5 @@
 .well[class*="bg"] {
   background-size: cover;
 
-  /* Transparent bg for improve readable */
-  &::before {
-    content: '';
-    position: absolute 0;
-
-    background: rgba($colorBlack, .6);
-  }
+  @mixin cover;
 }
