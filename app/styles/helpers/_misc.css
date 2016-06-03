@@ -10,3 +10,23 @@
 .img-circle {
   border-radius: 50%;
 }
+
+/* Float div with difference height */
+.fdh {
+
+  @media (--small-up) {
+    &:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+
+  @media (--medium-up) {
+    &:nth-child(2n+1) {
+      clear: none;
+    }
+
+    &:nth-child(4n+1) {
+      clear: both;
+    }
+  }
+}

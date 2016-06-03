@@ -1,0 +1,65 @@
+extend layouts/default
+
+block content
+  //- patterns_library/hero
+  .carousel#carousel
+    - var n = 1
+    while n < 5
+      .carousel-cell
+        .carousel-text
+          h2.carousel-h Being Smart Chef Every Day
+          p.carousel-sub-h 10 Recipes every week updates
+          a.btn(href="#") See all Recipes
+        img(src="/images/carousel/#{n++}.jpg", alt="Food")  
+
+  section.well.well--a
+    .container
+      .row
+        .col-xs-12
+          ul.list-filter.mbl
+            li.active
+              a(href="#") Foods
+            li
+              a(href="#") Beverages
+            li
+              a(href="#") Dessert
+            li
+              a(href="#") Pudding
+      
+      .row
+        - var i = 1
+        while i < 17
+          .col-xs-12.col-sm-6.col-md-3.fdh
+            //- patterns_library/cards
+            .card.mbm
+              .card__upper
+                a.card__thumb(href="#")
+                  img(src="http://placehold.it/360x205", alt="Food#{i++}")
+                .card__cta-group
+                  a.card__cta-btn(href="#view") View Recipe
+                  a.card__cta-btn(href="#bookmark") Bookmark Recipe
+              .card__under
+                header.card__name
+                  h3.card__h: a(href="#") Khatulistiwa Fruit Salad
+                  span.card__sub-h By Lina Sukowati
+                ul.card__meta
+                  li
+                    i.fa.fa-circle.text-green
+                    |  <span>Easy</span>
+                  
+                  li
+                    i.fa.fa-clock-o
+                    |  <span>10 Minutes</span>
+                    
+                  li.text-small
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star
+
+      .row
+        .col-xs-12.text-center
+          a.btn.btn--lg(href="#")
+            i.fa.fa-spinner
+            |  Load more
