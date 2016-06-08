@@ -5,4 +5,32 @@
   @m center {
     justify-content: center;
   }
+
+  /* equal width */
+  @m ew {
+
+    > div {
+      flex-grow: 1;
+    }
+  }
+
+  @media (--medium-up) {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (--medium-up) {
+
+  @b l-table {
+    display: table;
+
+    @e item {
+      display: table-cell;
+      width: 100%;
+    }
+
+    @m 50 {
+      width: 50%;
+    }
+  }
 }

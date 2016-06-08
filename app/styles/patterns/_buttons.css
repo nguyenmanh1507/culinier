@@ -53,3 +53,37 @@
     width: 100%;
   }
 }
+
+.btn-group {
+  width: 100%;
+  display: table;
+
+  border-left: 1px solid $colorBorder;
+  border-top: 1px solid $colorBorder;
+
+  > a,
+  > button,
+  > div {
+    display: block;
+    padding: $base;
+
+    color: $colorText;
+    text-align: center;
+    vertical-align: middle;
+
+    background: $colorGrayLight;
+    border-right: 1px solid $colorBorder;
+    border-bottom: 1px solid $colorBorder;
+
+    transition: $transition;
+
+    &:focus,
+    &:hover {
+      background: $colorBorder;
+    }
+
+    @media (--small-up) {
+      display: table-cell;
+    }
+  }
+}

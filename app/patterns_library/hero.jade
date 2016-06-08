@@ -16,3 +16,15 @@ block content
                 p.carousel-sub-h 10 Recipes every week updates
                 a.btn(href="#") See all Recipes
               img(src="/images/carousel/#{n++}.jpg", alt="Food")
+              
+        h3 Carousel Sync
+        
+        .carousel-for#carouselFor.mbm
+          - var n = 1
+          while n < 6
+            div: img(src="http://placehold.it/600x400", alt="Food#{n++}")
+        
+        .carousel-nav#carouselNav
+          - var n = 1
+          while n < 6
+            div: img(src="http://placehold.it/100x100", alt="Food#{n++}")

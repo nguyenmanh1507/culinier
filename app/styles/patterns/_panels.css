@@ -27,7 +27,20 @@
     transform: translate(50%, -30%);
   }
 
+  @m a {
+    background: $colorGrayLight;
+  }
+
+
   @media (--medium-up) {
     padding: calc($base * 2);
+  }
+
+  @m thin {
+    padding: calc($base / 2);
+
+    @media (--medium-up) {
+      padding: $base;
+    }
   }
 }

@@ -52,3 +52,20 @@ img {
 a {
   text-decoration: none;
 }
+
+ul,
+ol {
+  padding-left: $base;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  border: none;
+}

@@ -5,6 +5,19 @@
   @mixin hem;
 }
 
+.carousel-for,
+.carousel-nav {
+  max-width: 600px;
+}
+
+.carousel-for .slick-slide img {
+  width: 100%;
+}
+
+.carousel-nav .slick-slide img {
+  margin: 0 auto;
+}
+
 .carousel-cell {
   position: relative;
   z-index: 5;

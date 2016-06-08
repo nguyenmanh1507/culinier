@@ -11,3 +11,236 @@ block content
       span.bc__item Recipe
     
     .banner__cover
+    
+  .well
+    .container
+      .row
+        .col-xs-12
+          article.mbl
+            header.text-center.mbm
+              p.text-uppercase.text-bold
+                | Level: <span class="text-red">Master</span> &bull; Time: 2 Hours
+              h2.text-uppercase Spicy Lemper Roasted Prawn
+              span.text-light Posted By Alice Halah
+              
+            .row
+              .col-xs-12.col-sm-12.col-md-6
+                
+                .mbm
+                  .carousel-for#carouselFor.mbs
+                    - var n = 1
+                    while n < 6
+                      div: img(src="http://placehold.it/600x400", alt="Food#{n++}")
+                  
+                  .carousel-nav#carouselNav
+                    - var n = 1
+                    while n < 6
+                      div: img(src="http://placehold.it/100x100", alt="Food#{n++}")
+                  
+                .btn-group
+                  a(href="#")
+                    i.fa.fa-bookmark
+                    div Bookmark
+                    
+                  a(href="#")
+                    i.fa.fa-print
+                    div Print
+                  
+                  a(href="#")
+                    i.fa.fa-share-alt
+                    div Share
+                    
+                  a(href="#")
+                    | Delicious: 
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star
+                
+                h3 Descriptions
+                
+                p.mbm
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aliquam quaerat maxime velit reiciendis dignissimos atque sint numquam possimus sit tenetur magnam nobis nesciunt neque totam expedita voluptas a cumque facilis, minus ipsum. Aliquam quod, perferendis blanditiis. Recusandae ducimus, ratione.
+                  
+                h3 Nutrition
+                
+                table.table-striped.text-bold.mbm
+                  tbody
+                    tr 
+                      td Calories
+                      td 102 kcal
+                    tr
+                      td Cholesterol
+                      td 9 mg
+                    tr
+                      td Carbohydrates
+                      td 12.4 gr
+                    tr
+                      td Fat
+                      td 4.8 gr
+                    tr
+                      td Protein
+                      td 4.6 gr
+                
+                
+              .col-xs-12.col-sm-12.col-md-6
+                ul.list-striped.mbm
+                  li Ingredients
+                  li 1 bunch coriander, leaves and stalks roughly chopped
+                  li 1 long green chilli, sliced
+                  li 1 lime, zested, juiced
+                  li 3 cloves garlic, chopped
+                  li 600ml buttermilk
+                  li 1kg beef skirt steak (see note)
+                  li 2 baby cos lettuce, outer leaves removed
+                  li 1 bunch radish, stems trimmed to 1cm, quartered
+                  li 3 Lebanese cucumbers, sliced into long wedges
+                  li 1 tablespoon olive oil
+              
+                h3 Direction
+                ol
+                  li.mbs
+                    | Combine coriander, chilli, zest and garlic in a food processor and process to a coarse paste. Add buttermilk and process to combine. Reserve 250ml (1 cup) dressing. Place steak in a large bowl. Pour over remaining dressing, cover and refrigerate for 1 hour.
+                  
+                  li.mbs
+                    | Separate lettuce leaves and place in a large bowl with radishes and cucumber.
+                  
+                  li.mbs
+                    | Whisk lime juice into reserved dressing and season with salt and freshly ground black pepper. Makes 300ml.
+                    
+                  li.mbs
+                    | Heat a chargrill pan over high heat. Remove steak from marinade and gently pat dry. Discard marinade. Brush steak with oil and cook for 4 minutes each side for medium-rare or until cooked to your liking. Remove from pan, loosely cover with foil and rest for 5 minutes.
+                    
+                  li.mbs
+                    | Thinly slice steak and serve with salad and buttermilk dressing on the side.
+          
+          hr
+      
+      .row
+        .col-xs-12.col-sm-12.col-md-8.col-md-offset-2
+          .page-header.text-center
+            h3 You may also like
+          .l-table.mbl
+            .panel.panel--a.panel--thin.l-table__item.l-table--50
+              .media
+                .media__left
+                  a(href="#"): img(src="http://placehold.it/60x60", alt="Image#{i++}")
+                .media__body
+                  .text-orange.text-uppercase.text-small Helth
+                  a.text-dark.text-bold(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima.
+                  .text-light.text-small
+                    | Posted On September 20, 2016
+                  
+              
+            .panel.panel--a.panel--thin.l-table__item.l-table--50
+              .media
+                .media__left
+                  a(href="#"): img(src="http://placehold.it/60x60", alt="Image#{i++}")
+                .media__body
+                  .text-orange.text-uppercase.text-small Helth
+                  a.text-dark.text-bold(href="#") Lorem ipsum dolor sit amet.
+                  .text-light.text-small
+                    | Posted On September 20, 2016
+                    
+      .row
+        .col-xs-12.col-sm-12.col-md-8.col-md-offset-2
+          .page-header.text-center
+            h3 5 comments
+            
+          ol.list-comment
+
+            li
+              a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+              .list-comment__wrap
+                header.list-comment__meta
+                  a.text-dark.text-bold(href="#") Walter Hunter
+                  |  &bull; 
+                  time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                  a.text-blue.text-bold.text-uppercase(href="#") Reply
+                  
+                p.list-comment__content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quisquam nemo voluptatem, odit eum. Rem, mollitia esse rerum, saepe distinctio officiis?
+                  
+              ul
+                li
+                  a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                  .list-comment__wrap
+                    header.list-comment__meta
+                      a.text-dark.text-bold(href="#") Francesco Totti
+                      |  &bull; 
+                      time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                      a.text-blue.text-bold.text-uppercase(href="#") Reply
+                      
+                    p.list-comment__content
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maiores adipisci aliquid quae laboriosam quam iusto culpa omnis doloribus! Libero omnis, ex!
+                
+                li.list-comment--author
+                  a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                  .list-comment__wrap
+                    header.list-comment__meta
+                      a.text-dark.text-bold(href="#") Eric Lamela
+                      |  &bull; 
+                      time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                      a.text-blue.text-bold.text-uppercase(href="#") Reply
+                      
+                    p.list-comment__content
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid.
+                      
+            li.list-comment--author
+              a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+              .list-comment__wrap
+                header.list-comment__meta
+                  a.text-dark.text-bold(href="#") Francesco Totti
+                  |  &bull; 
+                  time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                  a.text-blue.text-bold.text-uppercase(href="#") Reply
+                  
+                p.list-comment__content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maiores adipisci aliquid quae laboriosam quam iusto culpa omnis doloribus! Libero omnis, ex!
+                  
+            li
+              a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+              .list-comment__wrap
+                header.list-comment__meta
+                  a.text-dark.text-bold(href="#") Balloteli
+                  |  &bull; 
+                  time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                  a.text-blue.text-bold.text-uppercase(href="#") Reply
+                  
+                p.list-comment__content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores, illo pariatur nesciunt modi quo perferendis doloremque doloribus architecto omnis sit cupiditate autem nisi corrupti non maxime suscipit dolor possimus, sunt.
+            
+          form.form(action="")
+            .page-header.text-center
+              h3 Simply leave a message here
+              small Please fill out our form below and we'll contact you as soon as possible.
+              
+            .row
+              .col-sm-12.col-md-4
+                .form__group
+                  label(for="field6") Name <small>(ex: Ricardo)</small>
+                  input.form__control#field6(type="text", name="field6")
+              
+              .col-sm-12.col-md-4
+                .form__group
+                  label(for="field7") Email <small>(Not Published)</small>
+                  input.form__control#field7(type="email", name="field7")
+              
+              .col-sm-12.col-md-4
+                .form__group
+                  label(for="field8") Website <small>(Optional)</small>
+                  input.form__control#field8(type="url", name="field8")
+                  
+              .col-sm-12
+                .form__group
+                  label(for="field10") Message
+                  textarea#field10.form__control(name="field10", cols="30", rows="10")
+                  
+            .form--se
+              .form__group
+                input.checkbox#field11(type="checkbox", checked)
+                label.label-checkbox.text-light(for="field11") Notify me of followup comments in this post via email
+                
+              .form__group
+                button.btn.btn--w(type="submit") Post Comment
