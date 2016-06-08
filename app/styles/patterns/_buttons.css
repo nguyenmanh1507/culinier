@@ -17,26 +17,37 @@
 
   @mixin btnBg $colorTextLight;
 
+  /* opaque */
+  @m o {
+    @mixin btnBg color($colorTextLight a(70%));
+  }
+
+  /* primary */
   @m p {
     @mixin btnBg $colorBlue;
   }
 
+  /* success */
   @m s {
     @mixin btnBg $colorGreen;
   }
 
+  /* warning */
   @m w {
     @mixin btnBg $colorPrimary;
   }
 
+  /* error */
   @m e {
     @mixin btnBg $colorRed;
   }
 
+  /* large */
   @m lg {
     font-size: $base;
   }
 
+  /* block */
   @m b {
     display: block;
     width: 100%;
