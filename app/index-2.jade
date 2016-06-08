@@ -1,0 +1,186 @@
+extend layouts/default
+
+block content
+  //- patterns_library/hero
+  .carousel#carousel
+    - var n = 1
+    while n < 5
+      .carousel-cell
+        .carousel-text
+          h2.carousel-h Being Smart Chef Every Day
+          p.carousel-sub-h 10 Recipes every week updates
+          a.btn(href="#") See all Recipes
+        img(src="/images/carousel/#{n++}.jpg", alt="Food")
+  
+  section.well
+    .container
+      .row
+        .col-xs-12
+          .page-header.text-center
+            h2 Culinier Editors
+            small Here they are, the people behind the success of culinier
+            
+      .row
+        - var i = 1
+        while i < 5
+          .col-xs-12.col-sm-6.col-md-3
+            .avatar.mbl
+              img.avatar__img(src="http://placehold.it/150x150", alt="avatar#{i++}")
+              .avatar__meta
+                a(href="#"): i.fa.fa-facebook
+                a(href="#"): i.fa.fa-twitter
+                a(href="#"): i.fa.fa-youtube
+                a(href="#"): i.fa.fa-google-plus
+                a(href="#"): i.fa.fa-linkedin
+                a(href="#"): i.fa.fa-pinterest
+                a(href="#"): i.fa.fa-envelope
+              h3.avatar__h Roberta Farina
+              small.avatar__sub-h Executive Editor
+              
+      .row
+        .col-xs-12.text-center
+          a.btn.btn--w(href="#") View all editors
+         
+        
+  //- patterns_library/wells
+  section.well.well--a
+    .container
+      .row
+        .col-xs-12
+          .page-header.text-center
+            h2 Editor's Choice
+            
+          ul.list-filter.mbl
+            li.active
+              a(href="#") Foods
+            li
+              a(href="#") Beverages
+            li
+              a(href="#") Dessert
+            li
+              a(href="#") Pudding
+      
+      .row
+        - var i = 1
+        while i < 4
+          .col-xs-12.col-sm-6.col-md-4
+            //- patterns_library/cards
+            .card.mbm
+              .card__upper
+                a.card__thumb(href="#")
+                  img(src="http://placehold.it/360x205", alt="Food#{i++}")
+                .card__cta-group
+                  a.card__cta-btn(href="#view") View Recipe
+                  a.card__cta-btn(href="#bookmark") Bookmark Recipe
+              .card__under
+                header.card__name
+                  h3.card__h: a(href="#") Khatulistiwa Fruit Salad
+                  span.card__sub-h By Lina Sukowati
+                ul.card__meta
+                  li
+                    i.fa.fa-circle.text-green
+                    |  <span>Easy</span>
+                  
+                  li
+                    i.fa.fa-clock-o
+                    |  <span>10 Minutes</span>
+                    
+                  li.text-small
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star.text-orange
+                    i.fa.fa-star
+        
+  section.well.well--bg-a.text-invert-color
+    .container
+      .row
+        .col-xs-12
+          .page-header.text-center
+            h2 Culinier Theme Features
+            small We have some features in this recipe theme as you can see 3 points below
+      
+      .row
+        .col-sm-12.col-md-4.mbm
+          i.fa.fa-bar-chart.fa-2x
+          
+          h4 Food nutritions
+          
+          p.text-small Get half price delivery this month on shops over £40 or recommend a friend and if they mention your account number at the checkout get one free delivery!
+                
+        .col-sm-12.col-md-4.mbm
+          i.fa.fa-cutlery.fa-2x
+          
+          h4 Cooking period
+          
+          p.text-small Ordering your shopping online is just a click away or you can still pop into the store to see us.
+          
+        .col-sm-12.col-md-4.mbm
+          i.fa.fa-cubes.fa-2x
+          
+          h4 Membership
+          
+          p.text-small New to the store are our bags of mixed dried berries. A perfect healthy snack or a nice topping for your cereal in the morning. Prices range, depending on the bag size, from £2.99 to £4.99 per bag.
+        
+  section.well
+    .container
+      .row
+        .col-xs-12
+          .page-header.text-center
+            h2 Recent Recipes
+            
+      .row
+        - var i = 1
+        while i < 9
+          .col-xs-12.col-sm-6.col-md-3
+            .card.mbm.card--nb
+              .card__upper
+                a.card__thumb(href="#")
+                  img(src="http://placehold.it/360x205", alt="Food#{i++}")
+                .card__cta-group
+                  a.card__cta-btn(href="#view") View Recipe
+                  a.card__cta-btn(href="#bookmark") Bookmark Recipe
+              .card__under
+                header.card__name
+                  h3.card__h: a(href="#") Khatulistiwa Fruit Salad
+                  span.card__sub-h By Lina Sukowati
+                ul.card__meta
+                  li
+                    i.fa.fa-circle.text-green
+                    |  <span>Easy</span>
+                  
+                  li
+                    i.fa.fa-clock-o
+                    |  <span>10 Minutes</span>
+            
+        
+        .col-xs-12.text-center
+          a.btn.btn--w(href="#") View all recipes
+  
+  section.well.well--a
+    .container
+      .row
+        .col-xs-12
+          .page-header
+            h2 Recent Blog Post
+      
+      .row
+        - var i = 1
+        while i < 4
+          .col-xs-12.col-sm-6.col-md-4
+            .card.card--center.mbm
+              .card__upper
+                a.card__thumb(href="#")
+                  img(src="http://placehold.it/360x205", alt="Food#{i++}")
+                .card__cta-group
+                  a.card__cta-btn(href="#view") View Recipe
+                  a.card__cta-btn(href="#bookmark") Bookmark Recipe
+              .card__under
+                header.card__name
+                  h3.card__h: a(href="#") Khatulistiwa Fruit Salad
+                  span.card__sub-h By Lina Sukowati
+                
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa rem in omnis quaerat atque, laborum quisquam officiis et distinctio, quis, quia.
+                  
+                a.text-orange(href="#") Continue Reading <i class="fa fa-arrow-right"></i>
