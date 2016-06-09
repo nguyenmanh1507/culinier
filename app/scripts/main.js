@@ -10,6 +10,8 @@
     const carouselFor = $('#carouselFor')
     const carouselNav = $('#carouselNav')
 
+    const postGallery = $('#postGallery')
+
     carousel.slick({
       dots: true,
       mobileFirst: true,
@@ -30,6 +32,11 @@
       arrows: false,
       asNavFor: '.carousel-for',
       focusOnSelect: true
+    })
+
+    postGallery.slick({
+      prevArrow: prevArrow,
+      nextArrow: nextArrow
     })
 
   }

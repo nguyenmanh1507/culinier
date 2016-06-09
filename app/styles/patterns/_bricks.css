@@ -1,0 +1,216 @@
+@b brick {
+
+  @e header {
+    padding: calc($base * 2) calc($base / 2);
+
+    color: $colorWhite;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  @e content {
+    padding-top: $base;
+    padding-bottom: $base;
+
+    @media (--medium-up) {
+      padding-top: calc($base * 2);
+    }
+  }
+
+  @e meta {
+    text-align: center;
+
+    time {
+      color: $colorPrimary;
+      text-transform: uppercase;
+    }
+  }
+
+  @e meta-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: calc($base * .8);
+    color: $colorTextLight;
+
+    a {
+      color: $colorTextLight;
+    }
+
+    img {
+      size: 30px;
+      margin-right: calc($base / 2);
+
+      border-radius: 50%;
+    }
+  }
+
+  @e h {
+    margin: 0 0 $base;
+
+    text-align: center;
+
+    a {
+      color: $colorText;
+    }
+  }
+
+  @e name {
+    display: block;
+    margin-top: calc($base / 2);
+
+    color: $colorWhite;
+    text-transform: uppercase;
+  }
+
+  @e addon {
+    padding: $base calc($base / 2);
+
+    text-align: center;
+    font-size: calc($base * .8);
+
+    a {
+      color: $colorTextLight;
+    }
+  }
+
+  @e link {
+    display: inline-block;
+    padding: calc($base / 2);
+    margin-top: $base;
+
+    color: $colorText;
+    font-size: calc($base * 1.5);
+    font-weight: 700;
+    text-decoration: underline;
+
+    background: color($colorPrimary a(20%));
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      background: color($colorPrimary a(80%));
+    }
+  }
+
+  @e img {
+    display: block;
+    width: 100%;
+  }
+
+  @e quote {
+    margin: 0;
+
+    font-family: $fontSpecial;
+    font-size: calc($base * 1.5);
+
+    cite {
+      display: block;
+      margin-top: $base;
+
+      font-family: $fontSecondary;
+      font-size: $base;
+      color: $colorTextLight;
+
+      &::before {
+        content: '-';
+        margin-right: calc($base / 2);
+      }
+    }
+  }
+
+  @e embed {
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  /* Brick has background */
+  @m bg {
+
+    .brick__content {
+      padding-left: calc($base / 2);
+      padding-right: calc($base / 2);
+
+      background: $colorGrayLight;
+    }
+
+    @media (--medium-up) {
+
+      .brick__content {
+        padding-left: calc($base * 2);
+        padding-right: calc($base * 2);
+      }
+    }
+  }
+
+  @m a {
+
+    .brick__header {
+      background: $colorAside;
+    }
+  }
+
+  @m b {
+
+    .brick__header {
+      background: $colorGallery;
+    }
+  }
+
+  @m c {
+
+    .brick__header {
+      background: $colorLink;
+    }
+  }
+
+  @m d {
+
+    .brick__header {
+      background: $colorImage;
+    }
+  }
+
+  @m e {
+
+    .brick__header {
+      background: $colorQuote;
+    }
+  }
+
+  @m f {
+
+    .brick__header {
+      background: $colorStatus;
+    }
+  }
+
+  @m g {
+
+    .brick__header {
+      background: $colorVideo;
+    }
+  }
+
+  @m h {
+
+    .brick__header {
+      background: $colorAudio;
+    }
+  }
+
+  @m i {
+
+    .brick__header {
+      background: $colorChat;
+    }
+  }
+}
+
+/* Make img full-width */
+.post-gallery img {
+  width: 100%;
+}

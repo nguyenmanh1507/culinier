@@ -1,0 +1,215 @@
+extend layouts/default
+
+block content
+
+  .banner.banner--bg-a
+    h2.banner__h Block Page
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Block page
+    
+    .banner__cover
+    
+  .well
+    .container
+      .row
+        .col-xs-12.col-sm-12.col-md-8.col-md-offset-2
+          article.brick.brick--a.brick--bg.mbm
+            .brick__header
+              i.fa.fa-file-o.fa-2x
+              a.brick__name(href="#") Aside
+              
+            .brick__content
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tenetur doloremque, eos quis pariatur repellendus illo repellat possimus inventore eveniet distinctio, quae hic. Ut rem sequi dolor voluptate itaque quae nesciunt dolorum harum ipsum? Laudantium error necessitatibus veritatis delectus!
+            
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>
+
+          article.brick.brick--b.mbm
+            .brick__header
+              i.fa.fa-image.fa-2x
+              a.brick__name(href="#") Gallery
+              
+            .post-gallery#postGallery
+              - var n = 1
+              while n < 5
+                div: img(src="http://placehold.it/600x400", alt="Gallery#{n++}")
+              
+            .brick__content
+              h1.brick__h
+                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing.
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tenetur doloremque, eos quis pariatur repellendus illo repellat possimus inventore eveniet distinctio, quae hic. Ut rem sequi dolor voluptate itaque quae nesciunt dolorum harum ipsum? Laudantium error necessitatibus veritatis delectus!
+            
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>
+        
+          article.brick.brick--e.brick--bg.mbm
+            .brick__header
+              i.fa.fa-quote-left.fa-2x
+              a.brick__name(href="#") Quote
+              
+            .brick__content
+              
+              blockquote.brick__quote
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, illum facere harum.
+                
+                cite Shevchenko
+            
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>              
+                  
+          article.brick.brick--f.brick--bg.mbm
+            .brick__header
+              i.fa.fa-pencil.fa-2x
+              a.brick__name(href="#") Status
+                              
+            .brick__content
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tenetur doloremque, eos quis pariatur repellendus illo repellat possimus inventore eveniet distinctio, quae hic. Ut rem sequi dolor voluptate itaque quae nesciunt dolorum harum ipsum? Laudantium error necessitatibus veritatis delectus!
+            
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>
+                  
+          article.brick.brick--g.mbm
+            .brick__header
+              i.fa.fa-video-camera.fa-2x
+              a.brick__name(href="#") Video
+              
+            .brick__embed
+                iframe(src="https://www.youtube.com/embed/SkwqySuuTxY", frameborder="0", width="560", height="315", allowfullscreen)
+            
+            .brick__content
+              h1.brick__h
+                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing.
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tenetur doloremque, eos quis pariatur repellendus illo repellat possimus inventore eveniet distinctio, quae hic. Ut rem sequi dolor voluptate itaque quae nesciunt dolorum harum ipsum? Laudantium error necessitatibus veritatis delectus!
+              
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>
+                    
+          article.brick.brick--h.mbm
+            .brick__header
+              i.fa.fa-volume-up.fa-2x
+              a.brick__name(href="#") Audio
+              
+            .brick__embed
+              iframe(src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253784004&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true", frameborder="0", width="100%", height="450", scrolling="no")
+                              
+            .brick__content
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tenetur doloremque, eos quis pariatur repellendus illo repellat possimus inventore eveniet distinctio, quae hic. Ut rem sequi dolor voluptate itaque quae nesciunt dolorum harum ipsum? Laudantium error necessitatibus veritatis delectus!
+            
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>
+        
+          article.brick.brick--i.brick--bg.mbm
+            .brick__header
+              i.fa.fa-comments-o.fa-2x
+              a.brick__name(href="#") Chat
+              
+            .brick__content
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+            table.table-striped
+              tr
+                td ngManh
+                td Lorem ipsum dolor sit.
+              tr
+                td Kate Upton
+                td Lorem ipsum dolor sit amet, consectetur adipisicing.
+                
+              tr
+                td ngManh
+                td Lorem ipsum dolor sit amet.
+              tr
+                td Kate Upton
+                td Lorem ipsum dolor.
+                
+              tr
+                td ngManh
+                td Lorem ipsum dolor sit.
+              tr
+                td Kate Upton
+                td Lorem ipsum.
+                  
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>          
+          
+          .pagination.text-center
+            a(href="#") 1
+            a(href="#") 2
+            span 3
+            a(href="#") 4

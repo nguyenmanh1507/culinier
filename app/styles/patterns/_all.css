@@ -10,3 +10,5 @@
 @import "panels";
 @import "breadcrumb";
 @import "banners";
+@import "bricks";
+@import "pagination";

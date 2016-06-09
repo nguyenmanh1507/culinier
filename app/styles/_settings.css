@@ -25,6 +25,17 @@ $colorGrayLight: #f4f4f4;
 $colorMineShaft: #232323;
 $colorScorpion: #585858;
 
+/* Color only use for Posts format */
+$colorAside: #7b6555;
+$colorGallery: #2c3e50;
+$colorLink: #eba05e;
+$colorImage: #bd83d4;
+$colorQuote: #37be70;
+$colorStatus: #4ebbc8;
+$colorVideo: #e66052;
+$colorAudio: #2c84d6;
+$colorChat: #235935;
+
 /* Media query */
 /* Breakpoint variables */
 $bpSmall: 768px;
