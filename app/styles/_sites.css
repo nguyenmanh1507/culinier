@@ -7,6 +7,17 @@
   background: $colorMineShaft;
 }
 
+.site-aside {
+
+  /* Only remove page-header's margin when it
+  inside aside */
+  .page-header {
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+  }
+}
+
 .site-footer {
   padding: $base 0 0;
   background: $colorText;

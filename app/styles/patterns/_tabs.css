@@ -1,0 +1,66 @@
+@b tab {
+
+  @e nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    clear: fix;
+
+    border-bottom: 4px solid $colorText;
+
+    li {
+
+      a {
+        display: block;
+        padding: $base;
+
+        color: $colorText;
+
+        transition: $transition;
+
+        &:focus,
+        &:hover {
+          color: $colorWhite;
+
+          background: $colorText;
+        }
+      }
+
+      &.active {
+
+        a {
+          color: $colorWhite;
+
+          background: $colorText;
+        }
+      }
+
+      @media (--medium-up) {
+        float: left;
+      }
+    }
+  }
+
+  @e content {
+    padding: calc($base / 2);
+
+    border: 1px solid $colorBorder;
+
+    @media (--medium-up) {
+      padding: $base;
+    }
+  }
+
+  @e pane {
+    opacity: 0;
+    display: none;
+
+    transition: $transition;
+
+    &.active {
+      opacity: 1;
+      display: block;
+    }
+  }
+}
