@@ -35,13 +35,60 @@ block content
                         a(href="#"): img(src="http://placehold.it/200x200", alt="Image#{n++}")
                       .media__body
                         a.text-orange.text-uppercase.text-small(href="#") Health
-                        h3: a.text-dark(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corrupti dolor libero!
+                        h3.text-large: a.text-dark(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corrupti dolor libero!
+                        p.text-small
+                          | Posted on <time datetime="2016-06-06">September 20, 2016</time>
+                        p.text-small
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto consequuntur esse illo, autem assumenda optio mollitia soluta possimus totam excepturi.
     
               
             .tab__pane#tab2
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, optio. Distinctio, iure sit illum, praesentium provident vero ipsum quis maiores deleniti neque!
               
             .tab__pane#tab3
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorem consequuntur aperiam accusantium a, nisi minus pariatur id assumenda quisquam vel.
+        
+        p Tab has background
+        
+        .tab#tabBg.tab--bg
+          ul.tab__nav
+            li.active
+              a(href="#tab4") 
+                | Articles 
+                span.text-bold (5)
+                
+            li
+              a(href="#tab5")
+                | Receipt 
+                span.text-bold (7)
+                
+            li
+              a(href="#tab6")
+                | Bookmark
+                span.text-bold (25)
+            
+          .tab__content
+            .tab__pane.active#tab4
+              ul.list-underline
+                - var n = 1
+                while n < 5
+                  li
+                    .media
+                      .media__left
+                        a(href="#"): img(src="http://placehold.it/200x200", alt="Image#{n++}")
+                      .media__body
+                        a.text-orange.text-uppercase.text-small(href="#") Health
+                        h3.text-large: a.text-dark(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corrupti dolor libero!
+                        p.text-small
+                          | Posted on <time datetime="2016-06-06">September 20, 2016</time>
+                        p.text-small
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto consequuntur esse illo, autem assumenda optio mollitia soluta possimus totam excepturi.
+    
+              
+            .tab__pane#tab5
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, optio. Distinctio, iure sit illum, praesentium provident vero ipsum quis maiores deleniti neque!
+              
+            .tab__pane#tab6
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorem consequuntur aperiam accusantium a, nisi minus pariatur id assumenda quisquam vel.
         
         

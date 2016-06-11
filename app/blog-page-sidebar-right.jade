@@ -208,7 +208,7 @@ block content
                 li
                   | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>          
           
-          .pagination.text-center
+          .pagination.text-center.mbl
             a(href="#") 1
             a(href="#") 2
             span 3
@@ -217,7 +217,7 @@ block content
         .col-sm-12.col-md-4
           aside.site-aside
           
-            .page-header.page-header--a
+            .page-header.page-header--a.mbs
               h4 Subscribe to our newsletter
               
             p.text-small.text-light
@@ -228,8 +228,70 @@ block content
                 label(for="newsletter")
                 input.form__control#newsletter(type="email", name="newsletter", placeholder="Your email address")
                 button.btn.btn--w.btn--b(type="submit") Subcribe
+                
+            .tab#tab.tab--bg.mbl
+              ul.tab__nav
+                li.active
+                  a(href="#tab1") 
+                    | Popular
+                    
+                li
+                  a(href="#tab2")
+                    | Recent
+                    
+                li
+                  a(href="#tab3")
+                    | Comments
+                
+              .tab__content
+                .tab__pane.active#tab1
+                  ul.list-underline
+                    - var n = 1
+                    while n < 5
+                      li
+                        .media
+                          .media__left
+                            a(href="#"): img(src="http://placehold.it/100x100", alt="Image#{n++}")
+                          .media__body
+                            a.text-dark.text-uppercase.text-small.text-bold(href="#") Lorem ipsum dolor sit amet.
+                            p.text-small
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-light
+                  
+                .tab__pane#tab2
+                  ul.list-underline
+                    - var n = 1
+                    while n < 5
+                      li
+                        .media
+                          .media__left
+                            a(href="#"): img(src="http://placehold.it/100x100", alt="Image#{n++}")
+                          .media__body
+                            a.text-dark.text-uppercase.text-small.text-bold(href="#") Lorem ipsum dolor sit amet.
+                            p.text-small
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-orange
+                              i.fa.fa-star.text-light
+                  
+                .tab__pane#tab3
+                  ul.list-underline
+                    - var n = 1
+                    while n < 5
+                      li
+                        .media
+                          .media__left
+                            a(href="#"): img.img-circle(src="http://placehold.it/100x100", alt="Image#{n++}")
+                          .media__body
+                            a.text-dark.text-uppercase.text-small.text-bold(href="#") Lorem ipsum dolor sit amet.
+                            p.text-small
+                              | Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit.
               
-            .page-header.page-header--a
+            .page-header.page-header--a.mbs
               h4 Editor's picks recipe
               
             .card.mbl
@@ -259,18 +321,21 @@ block content
                     i.fa.fa-star.text-orange
                     i.fa.fa-star
               
-            .page-header.page-header--a
+            .page-header.page-header--a.mbs
               h4 Advertisement
               
-            .page-header.page-header--a
+            .page-header.page-header--a.mbs
               h4 Fun Video
               
-            .page-header.page-header--a
+            .brick__embed.mbl
+                iframe(src="https://www.youtube.com/embed/rIo9grdfyrk", frameborder="0", width="560", height="315", allowfullscreen)
+              
+            .page-header.page-header--a.mbs
               h4 Instagram
               
             .row
               .col-sm-12.col-md-6
-                .page-header.page-header--a
+                .page-header.page-header--a.mbs
                   h4 Links one
                   
                 ul.text-small.text-bold.list-dot.mbl
@@ -288,7 +353,7 @@ block content
                   li: a(href="#") December
                   
               .col-sm-12.col-md-6
-                .page-header.page-header--a
+                .page-header.page-header--a.mbs
                   h4 Links two
                   
                 ul.text-small.text-bold.list-dot.mbl

@@ -71,12 +71,16 @@
 
           // Add .active to selected pane
           $(target).addClass('active')
+
+          return false
         })
       })
     }
   }
 
   const tab = new Tab('#tab')
+  const tabBg = new Tab('#tabBg')
   tab.init()
+  tabBg.init()
 
 })(jQuery)

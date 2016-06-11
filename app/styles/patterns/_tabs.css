@@ -63,4 +63,48 @@
       display: block;
     }
   }
+
+  @m bg {
+
+    .tab__nav {
+      border: 1px solid $colorBorder;
+
+      li a {
+        color: $colorWhite;
+
+        background: $colorText;
+      }
+
+      li.active a {
+        color: $colorText;
+
+        background: $colorGrayLight;
+      }
+
+      @media (--medium-up) {
+        display: flex;
+
+        li {
+          flex-grow: 1;
+          float: none;
+
+          text-align: center;
+        }
+      }
+    }
+
+    .tab__content {
+      border-top: none;
+
+      background: $colorGrayLight;
+    }
+  }
+
+  /* Remove last underline */
+  .list-underline {
+
+    li:last-child {
+      border-bottom: none;
+    }
+  }
 }
