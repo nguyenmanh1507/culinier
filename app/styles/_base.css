@@ -74,3 +74,31 @@ td {
 figure {
   margin: 0;
 }
+
+blockquote {
+  position: relative;
+
+  margin: 0;
+
+  padding: 1em .8em 1em 1.7em;
+
+  font-family: $fontSpecial;
+  font-size: responsive 1rem 1.5rem 2rem;
+  font-range: $bpSmall $bpMedium $bpLarge;
+  font-style: italic;
+
+  &::before {
+    content: '"';
+    position: absolute .2em auto auto 0;
+
+    font-family: $fontSpecial;
+    font-size: responsive 5rem 5.5rem 6rem;
+    font-range: $bpSmall $bpMedium $bpLarge;
+    line-height: 1;
+  }
+
+  cite {
+    font-size: responsive .8rem 1rem;
+    font-range: $bpSmall $bpMedium;
+  }
+}
