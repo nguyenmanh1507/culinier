@@ -1,0 +1,201 @@
+extend layouts/default
+
+block content
+
+  .banner.banner--bg-a
+    h2.banner__h Block Page
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Detail
+    
+    .banner__cover
+    
+  .well
+    .container
+      .row
+        .col-sm-12.col-md-8
+          article.brick.brick--b.mbm
+            .brick__header
+              i.fa.fa-image.fa-2x
+              a.brick__name(href="#") Gallery
+            
+            img.brick__img(src="http://placehold.it/600x400", alt="Image")
+              
+            .brick__content
+              h1.brick__h
+                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing.
+              header.brick__meta
+                time(datetime="2016-06-06") December 15, 2016
+                .brick__meta-author
+                  img(src="http://placehold.it/30x30", alt="avatar")
+                  | <p>Posted By <a href="#">Sarah Makulatuwa</a></p>
+                  
+              .text-light
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel illo quis accusamus debitis. Ad iste aut ex quod totam quae tempora voluptate, animi odio exercitationem corrupti voluptas molestias tempore, illum vero labore. Ut aut nulla totam quia voluptatem accusantium, voluptatibus iure nostrum nobis consequuntur commodi dicta nesciunt laboriosam aliquam.
+                  
+                blockquote
+                  div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatibus, harum.
+                  cite Nguyen Manh
+                  
+                h2 Lorem ipsum dolor sit amet, consectetur.
+                
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et error doloremque nihil at eum, optio atque nam alias repellendus odio suscipit quas quidem cupiditate adipisci repellat laudantium! Explicabo perspiciatis exercitationem nobis eaque eveniet, minima possimus laudantium voluptatibus error iure unde vitae, hic obcaecati voluptates. Deserunt dolore eveniet rerum ipsum qui illo ipsa dolor aut minima, ab cumque reiciendis ipsam a sit veritatis alias libero velit natus. Amet numquam deserunt expedita sit consectetur maxime ducimus omnis dicta ex!
+                  
+                figure
+                  img(src="http://placehold.it/600x400", alt="Photo")
+                  figcaption.text-small
+                    p Lorem ipsum dolor sit amet.
+                  
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolore consectetur velit ad, veritatis fuga aut aperiam. Autem accusantium minus molestiae laborum, aliquid tempore excepturi perferendis incidunt consectetur repellat dolorum sed, qui dolorem quas voluptatum ex eos dolor. Fugiat, expedita, doloribus!
+                  
+                ul
+                  li Lorem ipsum dolor sit amet.
+                  li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsa odio officia.
+                  li Lorem ipsum dolor sit amet, consectetur adipisicing.
+                  li Lorem ipsum dolor sit.
+                  
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eum nam facere natus fugiat architecto ipsam recusandae incidunt, sint tempore consequuntur officia iste minus repudiandae atque, cupiditate quam ab! Error fuga accusamus voluptates numquam, culpa corporis voluptate laudantium asperiores veniam tenetur, quaerat recusandae animi assumenda nostrum eum impedit nulla dolor quasi dolorum amet laborum ratione labore?
+            
+            .brick__addon
+              ul.list-inline
+                li
+                  | <a href="#"><i class="fa fa-comments-o"></i> 0 Comments</a>
+                  
+                li
+                  | <a href="#"><i class="fa fa-share-alt"></i> Share This</a>
+          
+          .row        
+            .col-sm-12
+              .page-header.text-center
+                h3 You may also like
+              .l-table.mbl
+                .panel.panel--a.panel--thin.l-table__item.l-table--50
+                  .media
+                    .media__left
+                      a(href="#"): img(src="http://placehold.it/60x60", alt="Image#{i++}")
+                    .media__body
+                      .text-orange.text-uppercase.text-small Helth
+                      a.text-dark.text-bold(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima.
+                      .text-light.text-small
+                        | Posted On September 20, 2016
+                      
+                  
+                .panel.panel--a.panel--thin.l-table__item.l-table--50
+                  .media
+                    .media__left
+                      a(href="#"): img(src="http://placehold.it/60x60", alt="Image#{i++}")
+                    .media__body
+                      .text-orange.text-uppercase.text-small Helth
+                      a.text-dark.text-bold(href="#") Lorem ipsum dolor sit amet.
+                      .text-light.text-small
+                        | Posted On September 20, 2016
+                                      
+            .col-sm-12
+              .page-header.text-center
+                h3 5 comments
+                
+              ol.list-comment
+
+                li
+                  a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                  .list-comment__wrap
+                    header.list-comment__meta
+                      a.text-dark.text-bold(href="#") Walter Hunter
+                      |  &bull; 
+                      time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                      a.text-blue.text-bold.text-uppercase(href="#") Reply
+                      
+                    p.list-comment__content
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quisquam nemo voluptatem, odit eum. Rem, mollitia esse rerum, saepe distinctio officiis?
+                      
+                  ul
+                    li
+                      a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                      .list-comment__wrap
+                        header.list-comment__meta
+                          a.text-dark.text-bold(href="#") Francesco Totti
+                          |  &bull; 
+                          time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                          a.text-blue.text-bold.text-uppercase(href="#") Reply
+                          
+                        p.list-comment__content
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maiores adipisci aliquid quae laboriosam quam iusto culpa omnis doloribus! Libero omnis, ex!
+                    
+                    li.list-comment--author
+                      a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                      .list-comment__wrap
+                        header.list-comment__meta
+                          a.text-dark.text-bold(href="#") Eric Lamela
+                          |  &bull; 
+                          time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                          a.text-blue.text-bold.text-uppercase(href="#") Reply
+                          
+                        p.list-comment__content
+                          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid.
+                          
+                li.list-comment--author
+                  a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                  .list-comment__wrap
+                    header.list-comment__meta
+                      a.text-dark.text-bold(href="#") Francesco Totti
+                      |  &bull; 
+                      time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                      a.text-blue.text-bold.text-uppercase(href="#") Reply
+                      
+                    p.list-comment__content
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maiores adipisci aliquid quae laboriosam quam iusto culpa omnis doloribus! Libero omnis, ex!
+                      
+                li
+                  a.list-comment__avatar(href="#"): img(src="http://placehold.it/100x100", alt="Avatar")
+                  .list-comment__wrap
+                    header.list-comment__meta
+                      a.text-dark.text-bold(href="#") Balloteli
+                      |  &bull; 
+                      time.text-light(datetime="2016-06-06") July 17, 2016 - 08:40 PM
+                      a.text-blue.text-bold.text-uppercase(href="#") Reply
+                      
+                    p.list-comment__content
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores, illo pariatur nesciunt modi quo perferendis doloremque doloribus architecto omnis sit cupiditate autem nisi corrupti non maxime suscipit dolor possimus, sunt.
+                
+              form.form(action="").mbl
+                .page-header.text-center
+                  h3 Simply leave a message here
+                  small Please fill out our form below and we'll contact you as soon as possible.
+                  
+                .row
+                  .col-sm-12.col-md-4
+                    .form__group
+                      label(for="field6") Name <small>(ex: Ricardo)</small>
+                      input.form__control#field6(type="text", name="field6")
+                  
+                  .col-sm-12.col-md-4
+                    .form__group
+                      label(for="field7") Email <small>(Not Published)</small>
+                      input.form__control#field7(type="email", name="field7")
+                  
+                  .col-sm-12.col-md-4
+                    .form__group
+                      label(for="field8") Website <small>(Optional)</small>
+                      input.form__control#field8(type="url", name="field8")
+                      
+                  .col-sm-12
+                    .form__group
+                      label(for="field10") Message
+                      textarea#field10.form__control(name="field10", cols="30", rows="10")
+                      
+                .form--se
+                  .form__group
+                    input.checkbox#field11(type="checkbox", checked)
+                    label.label-checkbox.text-light(for="field11") Notify me of followup comments in this post via email
+                    
+                  .form__group
+                    button.btn.btn--w(type="submit") Post Comment
+          
+        .col-sm-12.col-md-4
+          include includes/sidebar
