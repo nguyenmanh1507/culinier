@@ -14,9 +14,9 @@
     }
   }
 
-  @media (--medium-up) {
+  /*@media (--medium-up) {
     flex-wrap: nowrap;
-  }
+  }*/
 }
 
 @media (--medium-up) {
