@@ -7,6 +7,17 @@
 - [ ] Search form on header
 - [ ] Editor's choice filter (homepage)
 
+## Todo:Pages
+
+- [x] Homepage
+- [x] Homepage 2
+- [x] Blog page
+- [x] Blog page sidebar right
+- [x] Blog detail
+- [x] Recipe page
+- [x] Recipe detail
+- [ ] Contact page
+
 ## Bugs
 
 - [x] ~~Social list on avatar display when hover on it~~
