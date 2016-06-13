@@ -30,3 +30,8 @@
     }
   }
 }
+
+/* Google Map style */
+#gMap {
+  height: 460px;
+}

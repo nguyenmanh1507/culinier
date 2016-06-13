@@ -1,0 +1,90 @@
+extend layouts/default
+
+block content
+  //- Enable flag that insert neccesary script to load Google Map
+  - var gMap = true
+  
+  .banner.banner--bg-a
+    h2.banner__h Contact Page
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Contact
+    
+    .banner__cover
+  
+  .well
+    .container
+      .row.mbl
+        .col-sm-12.col-lg-8.col-lg-offset-2
+          #gMap
+          
+          h2 Lorem ipsum dolor sit amet.
+          
+          p.text-light
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur provident placeat sed beatae iure. Beatae voluptatibus aperiam distinctio vero ratione dolorem!
+            
+          .row
+            .col-sm-12.col-md-4
+              h4.text-light.text-uppercase Culinier Office I
+              .text-light
+                | Jalan Kaliurang Km. 7<br>
+                | Banteng Kopen III Rt 01 RW 22<br>
+                | No. 36 Sinduharjo Ngaglik, Sleman
+            
+            .col-sm-12.col-md-4
+              h4.text-light.text-uppercase Culinier Office II
+              .text-light
+                | Jalan Kaliurang Km. 7<br>
+                | Banteng Kopen III Rt 01 RW 22<br>
+                | No. 6 Sinduharjo Ngaglik, Sleman
+              
+            .col-sm-12.col-md-4
+              h4.text-light.text-uppercase Culinier Hours
+              .text-light
+                | Mon-Fri: 9:00 AM - 6:00 PM<br>
+                | Sat: 9:00 AM - 7:00 PM<br>
+                | PH: Closed
+
+      .row
+        .col-sm-12.col-lg-8.col-lg-offset-2    
+          form.form(action="")
+            .page-header.text-center.mbm
+              h3 Simply leave a message here
+              small Please fill out our form below and we'll contact you as soon as possible.
+              
+            .row
+              .col-sm-12.col-md-4
+                .form__group
+                  label(for="field6") Name <small>(ex: Ricardo)</small>
+                  input.form__control#field6(type="text", name="field6")
+              
+              .col-sm-12.col-md-4
+                .form__group
+                  label(for="field7") Email <small>(Not Published)</small>
+                  input.form__control#field7(type="email", name="field7")
+              
+              .col-sm-12.col-md-4
+                .form__group
+                  label(for="field8") Website <small>(Optional)</small>
+                  input.form__control#field8(type="url", name="field8")
+              
+              .col-sm-12
+                .form__group
+                  label(for="field9") Subject
+                  input.form__control#field9(type="text", name="field9")
+                  
+              .col-sm-12
+                .form__group
+                  label(for="field10") Message
+                  textarea#field10.form__control(name="field10", cols="30", rows="10")
+                  
+            .form--se
+              .form__group
+                input.checkbox#field11(type="checkbox", checked)
+                label.label-checkbox.text-light(for="field11") Send a copy of this message to my email
+                
+              .form__group
+                button.btn.btn--w(type="submit") Send Message
+            
