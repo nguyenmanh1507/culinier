@@ -8,17 +8,86 @@
     font-weight: 700;
   }
 
+  /* Hamburger menu */
+  @e ham {
+    position: relative;
+
+    size: 40px 24px;
+    float: right;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+
+      content: '';
+      size: 100% 4px;
+
+      background: $colorWhite;
+      transition: $transition;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &.is-nav-open {
+
+      .site-nav__ham-inner {
+        opacity: 0;
+      }
+
+      &::before {
+        transform: rotateZ(45deg);
+        transform-origin: top left;
+      }
+
+      &::after {
+        transform: rotateZ(-45deg);
+        transform-origin: top left;
+      }
+    }
+  }
+
+  @e ham-inner {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+
+    size: 100% 4px;
+
+    background: $colorWhite;
+    border: none;
+    transition: $transition;
+  }
+
   @e brand {
     margin: 0;
+    float: left;
 
     @media (--nav-desktop) {
       flex-grow: 1;
     }
   }
 
+  @e nav {
+    clear: both;
+  }
+
   @e list {
-    padding: 0;
+    padding: $base 0 0;
     margin: 0;
+    display: none;
+
+    &.is-show {
+      display: block;
+    }
 
     li {
       margin-bottom: $base;
