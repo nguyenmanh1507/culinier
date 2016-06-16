@@ -21,6 +21,8 @@
 - [x] Archives page
 - [x] Editors page
 - [x] Advanced Search
+- [x] Login/Register page
+- [ ] Submit Recipe
 
 ## Bugs
 
@@ -33,6 +35,7 @@
 ## 3-rd plugins
 
 * Slider: [Slick](http://kenwheeler.github.io/slick/)
+* Text Editor: [TinyMCE](https://www.tinymce.com/)
 
 ## Others
 

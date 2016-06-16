@@ -68,7 +68,7 @@ block content
             .page-header.text-center
               h2 Contact form
             
-            form.form(action="")
+            form.form(action="").mbl
               .page-header.text-center.mbm
                 h3 Simply leave a message here
                 small Please fill out our form below and we'll contact you as soon as possible.
@@ -107,3 +107,33 @@ block content
                 .form__group
                   button.btn.btn--w(type="submit") Send Message
                   
+        .row
+          .col-xs-12.col-md-push-2.col-md-8
+            
+            .page-header.text-center
+              h2 Input group
+            
+            form.form(action="")
+              label(for="field1") Username
+              .form__group.form__input-group
+                select.form__input-addon.form__control
+                  option(value="1") Alerts
+                  option(value="1") Thumbnails
+                  option(value="1") Wells
+                  option(value="1") Navbar
+                  
+                input.form__control#field1(type="text", name="field1")
+                button.btn.btn--e.form__input-addon: i.fa.fa-close
+              
+              .form__group
+                label(for="field2") Password
+                input.form__control#field2(type="password", name="field2")
+                
+              .form--se
+                .form__group
+                  input.checkbox#field3(type="checkbox", name="field3")
+                  label.label-checkbox.text-small.text-light(for="field3") Remember me
+                  
+                .form__group
+                  button.btn.btn--w(type="submit") Login            
+    

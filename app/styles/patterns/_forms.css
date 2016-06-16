@@ -4,6 +4,9 @@
   background: $colorGrayLight;
 
   label {
+    display: inline-block;
+    margin-bottom: calc($base / 4);
+
     font-size: responsive 0.75rem 1rem;
     font-range: $bpSmall $bpMedium;
     font-weight: 700;
@@ -48,13 +51,13 @@
   }
 
   @e group {
-    margin-bottom: calc($base / 2);
+    margin-bottom: calc($base * 1.5);
   }
 
   @e control {
     display: block;
     width: 100%;
-    margin: calc($base / 4) 0 calc($base * 1.5);
+    margin-bottom: calc($base / 4);
     padding: calc($base / 2);
 
     background: $colorWhite;
@@ -85,6 +88,19 @@
 
       transform: translate(-50%, -50%);
       background: $colorGrayLight;
+    }
+  }
+
+  @e input-group {
+    display: flex;
+    margin-bottom: calc($base / 4);
+
+    .form__input-addon:first-child {
+      flex-basis: 20%;
+    }
+
+    .form__control {
+      margin: 0;
     }
   }
 
@@ -124,4 +140,17 @@
   @media (--large-up) {
     padding: calc($base * 3);
   }
+}
+
+/* File upload style for Webkit */
+::-webkit-file-upload-button {
+  display: block;
+  margin: -7px;
+  height: 38px;
+
+  color: $colorWhite;
+
+  background: $colorText;
+  border: none;
+  cursor: pointer;
 }

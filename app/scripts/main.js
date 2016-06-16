@@ -41,7 +41,7 @@
 
   }
 
-  /* Tab */
+  // Tab
   class Tab {
     constructor(el) {
       this.el = el
@@ -82,5 +82,14 @@
   const tabBg = new Tab('#tabBg')
   tab.init()
   tabBg.init()
+
+  // Text Editor
+  if (window.tinyMCE) {
+    tinymce.init({
+      selector: '#direction',
+      height: 250,
+      content_style: 'body {font-size: 16px !important; font-family: Raleway,sans-serif !important;}'
+    })
+  }
 
 })(jQuery)

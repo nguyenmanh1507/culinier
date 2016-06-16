@@ -10,7 +10,7 @@
 
   box-shadow: inset 1px 1px 0 0 rgba($colorWhite, .2);
   border: none;
-  border-radius: 1.5em;
+  /*border-radius: 1.5em;*/
   transition: $transition;
 
   cursor: pointer;

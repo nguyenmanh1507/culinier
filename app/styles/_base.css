@@ -102,3 +102,7 @@ blockquote {
     font-range: $bpSmall $bpMedium;
   }
 }
+
+input[type='file'] {
+  cursor: pointer;
+}
