@@ -22,7 +22,8 @@
 - [x] Editors page
 - [x] Advanced Search
 - [x] Login/Register page
-- [ ] Submit Recipe
+- [x] Submit Recipe
+- [x] A & Q page
 
 ## Bugs
 

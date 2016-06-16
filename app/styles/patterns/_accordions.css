@@ -1,0 +1,41 @@
+@b acc {
+
+  @e heading {
+    padding: $base;
+
+    color: $colorWhite;
+
+    background: $colorText;
+    cursor: pointer;
+  }
+
+  @e title {
+    margin: 0;
+
+    &::after {
+      float: right;
+
+      font-family: 'FontAwesome';
+      content: '\f067';
+
+    }
+  }
+
+  @e body {
+    padding: $base;
+    display: none;
+
+    border: 1px solid $colorBorder;
+  }
+
+  &.is-show {
+
+    .acc__title::after {
+      content: '\f068';
+    }
+
+    .acc__body {
+      display: block;
+    }
+  }
+}
