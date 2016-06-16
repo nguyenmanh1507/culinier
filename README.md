@@ -16,7 +16,11 @@
 - [x] Blog detail
 - [x] Recipe page
 - [x] Recipe detail
-- [ ] Contact page
+- [x] Contact page
+- [x] My Account
+- [x] Archives page
+- [x] Editors page
+- [ ] Advanced Search
 
 ## Bugs
 
