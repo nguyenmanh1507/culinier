@@ -57,6 +57,7 @@
     margin: calc($base / 4) 0 calc($base * 1.5);
     padding: calc($base / 2);
 
+    background: $colorWhite;
     border: 1px solid $colorBorder;
     outline: none;
 

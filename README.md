@@ -20,7 +20,7 @@
 - [x] My Account
 - [x] Archives page
 - [x] Editors page
-- [ ] Advanced Search
+- [x] Advanced Search
 
 ## Bugs
 

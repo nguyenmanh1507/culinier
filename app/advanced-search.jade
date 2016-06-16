@@ -1,0 +1,60 @@
+extend layouts/default
+
+block content
+
+  .banner.banner--bg-a
+    h2.banner__h Advanced Search
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Advanced search
+    
+    .banner__cover
+    
+  .well
+    .container
+      .row
+        .col-sm-12.col-md-8.col-md-offset-2
+        
+          form.form(action="")
+            .row
+              .col-sm-12
+                .form__group
+                  label(for="field6") By Keyword (optional)
+                  input.form__control#field6(type="text", name="field6")
+              
+              .col-sm-12
+                .form__group
+                  label(for="field7") Select one or more ingredients that should be included in recipe
+                  input.form__control#field7(type="email", name="field7")
+              
+              .col-sm-12
+                .form__group
+                  label(for="field8") Select one or more ingredients that should be excluded in recipe
+                  input.form__control#field8(type="url", name="field8")
+                  
+              .col-sm-12.col-md-6
+                .form__group
+                  label(for="field9") Choose Category
+                  select.form__control#field9
+                    option(value="1") Select
+                    option(value="2") Foods
+                    option(value="3") Beverages
+                  
+              .col-sm-12.col-md-6
+                .form__group
+                  label(for="field10") Choose Level
+                  select.form__control#field10
+                    option(value="1") Beginner
+                    option(value="2") Intermediate
+                    option(value="3") Master
+                  
+              .col-sm-12.col-md-6
+                .form__group
+                  label(for="field11") Choose Time Needed
+                  select.form__control#field11
+                    option(value="1") 5 Minutes
+                    option(value="2") 15 Minutes
+                    option(value="3") > 30 Minutes
+          
