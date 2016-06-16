@@ -1,0 +1,68 @@
+extend layouts/default
+
+block content
+
+  .banner.banner--bg-a
+    h2.banner__h Login / Register
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Login
+    
+    .banner__cover
+    
+  .well
+    .container
+      .row
+        .col-sm-12.col-md-8.col-md-offset-2
+          .page-header.text-center.mbs
+            h2 Login
+          
+          form.form(action="").mbl
+            .form__group
+              label(for="field1") Username
+              input.form__control#field1(type="text", name="field1")
+            
+            .form__group
+              label(for="field2") Password
+              input.form__control#field2(type="password", name="field2")
+              
+            .form--se
+              .form__group
+                input.checkbox#field3(type="checkbox", name="field3")
+                label.label-checkbox.text-small.text-light(for="field3") Remember me
+                
+              .form__group
+                button.btn.btn--w(type="submit") Login
+                
+                
+          .page-header.text-center.mbs
+            h2 Register
+            small If you don’t have account yet
+          
+          form.form(action="").mbl
+            .form__group
+              label(for="field4") Username
+              input.form__control#field4(type="text", name="field4")
+            
+            .form__group
+              label(for="field5") Password
+              input.form__control#field5(type="password", name="field5")
+              
+            .form--se
+              .form__group
+                
+              .form__group
+                button.btn.btn--w(type="submit") Register
+                
+            .form__sep
+              span OR
+              
+            .row
+              .col-sm-12.col-md-6
+                a.btn.btn--b.btn--lg.facebook(href="#") Sign up via Facebook
+                
+              .col-sm-12.col-md-6
+                a.btn.btn--b.btn--lg.twitter(href="#") Sign up via Twitter
+                      

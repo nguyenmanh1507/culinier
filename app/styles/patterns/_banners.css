@@ -19,6 +19,7 @@
 
     font-family: $fontSecondary;
     color: $colorWhite;
+    text-transform: uppercase;
   }
 
   @e cover {
