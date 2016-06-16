@@ -11,6 +11,10 @@
   border-radius: 50%;
 }
 
+.img-border {
+  border: .8em solid $colorBorder;
+}
+
 /* Float div with difference height */
 .fdh {
 
