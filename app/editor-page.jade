@@ -1,0 +1,41 @@
+extend layouts/default
+
+block content
+
+  .banner.banner--bg-a
+    h2.banner__h Editor page
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Editor
+    
+    .banner__cover
+    
+  .well  
+    .container
+      .row.mbm
+        .col-xs-12
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime corporis ducimus, aperiam quis consequatur magni libero sapiente placeat commodi odit a itaque quod delectus ab voluptatem quisquam et in illum necessitatibus nesciunt natus tenetur dolores ullam. Quis accusamus animi vitae fuga odit.
+          
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iure culpa, eaque. Molestias saepe rem soluta eos. Quos nemo, asperiores laboriosam laborum, ab praesentium nam, amet laudantium quisquam reiciendis placeat modi excepturi inventore aliquam. Sint nulla molestiae numquam accusamus delectus minus ullam ea enim quibusdam, alias, rerum et quo harum illo. Impedit natus quam veritatis.
+          
+      .row
+        -var i = 1
+        while i < 9
+          .col.xs-12.col-sm-6.col-md-3.fdh
+            .avatar.mbm
+              img.avatar__img(src="http://placehold.it/150x150", alt="avatar#{i++}")
+              .avatar__meta
+                a(href="#"): i.fa.fa-facebook
+                a(href="#"): i.fa.fa-twitter
+                a(href="#"): i.fa.fa-youtube
+                a(href="#"): i.fa.fa-google-plus
+                a(href="#"): i.fa.fa-linkedin
+                a(href="#"): i.fa.fa-pinterest
+                a(href="#"): i.fa.fa-envelope
+              h3.avatar__h Roberta Farina
+              small.avatar__sub-h Executive Editor
+              .avatar__desc
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident incidunt doloribus maiores, similique facere quo. Nam porro ullam sed ea, sapiente aliquam sit totam beatae voluptate dolorum. Non esse assumenda quia eaque.
+            

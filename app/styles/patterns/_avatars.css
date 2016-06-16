@@ -41,6 +41,35 @@
   @e sub-h {
     font-size: calc($base * .8);
   }
+
+  @e desc {
+    position: relative;
+
+    margin-top: calc($base * 1.2);
+    padding: $base calc($base / 2);
+
+    font-size: calc($base * .8);
+    text-align: left;
+
+    background: $colorGrayLight;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      triangle: right-iso pointing-up;
+      height: $base;
+      background-color: $colorGrayLight;
+    }
+
+    @media (--medium-up) {
+      padding: calc($base * 1.5) $base;
+    }
+  }
 }
 
 .no-touch {
