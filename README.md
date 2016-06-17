@@ -24,6 +24,7 @@
 - [x] Login/Register page
 - [x] Submit Recipe
 - [x] A & Q page
+- [ ] Recipe Index
 
 ## Bugs
 

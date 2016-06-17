@@ -1,16 +1,20 @@
 @b media {
-  clear: fix;
+  display: flex;
+  flex-wrap: wrap;
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
   }
 
   @e left {
-    float: left;
     margin-right: $base;
   }
 
   @e body {
-    display: table-cell;
+    flex-grow: 1;
+  }
+
+  @media (--small-up) {
+    flex-wrap: nowrap;
   }
 }

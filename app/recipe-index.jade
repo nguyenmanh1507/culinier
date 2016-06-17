@@ -1,0 +1,78 @@
+extend layouts/default
+
+block content
+
+  .banner.banner--bg-a
+    h2.banner__h Recipes Index
+    
+    //- patterns_library/breadcrumb
+    .bc
+      a.bc__item(href="#") Home
+      span.bc__item Recipes Index
+    
+    .banner__cover
+    
+  .well
+    .container
+      .row
+        .col-sm-12.col-md-8
+          .media.mbm
+            .media__left
+              .square a
+              
+            .media__body
+              ul.list-underline
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") All
+                  a.l-asw__item.text-dark(href="#") 18
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Asian
+                  a.l-asw__item.text-dark(href="#") 3
+                  
+          .media.mbm
+            .media__left
+              .square b
+              
+            .media__body
+              ul.list-underline
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Banana
+                  a.l-asw__item.text-dark(href="#") 4
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Beef
+                  a.l-asw__item.text-dark(href="#") 2
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Blog
+                  a.l-asw__item.text-dark(href="#") 5
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Bafigur
+                  a.l-asw__item.text-dark(href="#") 8
+          
+          .media.mbm
+            .media__left
+              .square c
+              
+            .media__body
+              ul.list-underline
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Banana
+                  a.l-asw__item.text-dark(href="#") 4
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Beef
+                  a.l-asw__item.text-dark(href="#") 2
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Blog
+                  a.l-asw__item.text-dark(href="#") 5
+                  
+                li.l-asw
+                  a.l-asw__item.text-dark(href="#") Bafigur
+                  a.l-asw__item.text-dark(href="#") 8
+        
+        .col-sm-12.col-md-4
+          include includes/sidebar

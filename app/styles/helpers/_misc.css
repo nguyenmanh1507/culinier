@@ -35,6 +35,20 @@
   }
 }
 
+/* Create Square div */
+.square {
+  size: 100px;
+
+  color: $colorWhite;
+  text-align: center;
+  font-size: calc($base * 3);
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+
+  background: $colorPrimary
+}
+
 /* Google Map style */
 #gMap {
   height: 460px;

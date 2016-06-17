@@ -19,6 +19,24 @@
   }*/
 }
 
+/* Alignment Shifting Wrapping */
+@b l-asw {
+  display: flex;
+  flex-wrap: wrap;
+
+  @e item {
+
+    &:first-child {
+      flex-grow: 1;
+      padding-right: $base;
+    }
+
+    &:last-child {
+      padding-left: $base;
+    }
+  }
+}
+
 @media (--medium-up) {
 
   @b l-table {
