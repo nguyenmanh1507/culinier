@@ -1,5 +1,11 @@
 # Culinier - Food recipes Magazine.
 
+## Install
+
+* Clone project
+* Run ```npm i && bower i```
+* Run ```gulp serve```
+
 ## Todos
 
 - [ ] Navigation dropdown
