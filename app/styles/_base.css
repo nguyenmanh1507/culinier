@@ -10,8 +10,8 @@ body {
 
   font-family: $fontPrimary;
   font-size: 1rem;
-  color: $colorText;
   line-height: 1.4;
+  color: $colorText;
 
   background: $colorWhite;
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1em 0 .4em;
+  margin: 1em 0 0.4em;
 }
 
 /* Scale: 1.250 - Major Third */
@@ -36,6 +36,7 @@ h1 { font-size: 2.441rem; }
 h2 { font-size: 1.953rem; }
 h3 { font-size: 1.563rem; }
 h4 { font-size: 1rem; }
+
 h5,
 h6 {
   font-size: 0.8rem;
@@ -68,7 +69,7 @@ th {
 }
 
 td {
-  border: none;
+  border: 0;
 }
 
 figure {
@@ -78,28 +79,27 @@ figure {
 blockquote {
   position: relative;
 
+  padding: 1em 0.8em 1em 1.7em;
   margin: 0;
 
-  padding: 1em .8em 1em 1.7em;
-
+  font-range: $bpSmall $bpMedium $bpLarge;
   font-family: $fontSpecial;
   font-size: responsive 1rem 1.5rem 2rem;
-  font-range: $bpSmall $bpMedium $bpLarge;
   font-style: italic;
 
   &::before {
-    content: '"';
-    position: absolute .2em auto auto 0;
+    position: absolute 0.2em auto auto 0;
 
+    font-range: $bpSmall $bpMedium $bpLarge;
     font-family: $fontSpecial;
     font-size: responsive 5rem 5.5rem 6rem;
-    font-range: $bpSmall $bpMedium $bpLarge;
     line-height: 1;
+    content: '"';
   }
 
   cite {
-    font-size: responsive .8rem 1rem;
     font-range: $bpSmall $bpMedium;
+    font-size: responsive 0.8rem 1rem;
   }
 }
 

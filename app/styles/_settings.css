@@ -14,9 +14,9 @@ $fontSpecial: 'Vidaloka', serif;
 /* Colors */
 $colorPrimary: #f8a631;
 $colorText: #2b2b2b;
-$colorTextLight: #999999;
-$colorWhite: #ffffff;
-$colorBlack: #000000;
+$colorTextLight: #999;
+$colorWhite: #fff;
+$colorBlack: #000;
 $colorBlue: #45b5f5;
 $colorRed: #c0392b;
 $colorGreen: #2ecc71;
@@ -36,8 +36,8 @@ $colorVideo: #e66052;
 $colorAudio: #2c84d6;
 $colorChat: #235935;
 
-/* Media query */
-/* Breakpoint variables */
+/* Media query
+ * Breakpoint variables */
 $bpSmall: 768px;
 $bpMedium: 992px;
 $bpLarge: 1200px;
