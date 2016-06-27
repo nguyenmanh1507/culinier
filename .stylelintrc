@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-primer",
+  "rules": {
+    "string-quotes": "single",
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute"]
+      }
+    ]
+  }
+}

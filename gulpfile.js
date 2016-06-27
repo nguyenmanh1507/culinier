@@ -25,7 +25,7 @@ gulp.task('views:pattern', () => {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('styles', () => {
+gulp.task('styles', ['lint:css'], () => {
   const
     assets       = require('postcss-assets'),
     bem          = require('postcss-bem'),
@@ -79,6 +79,17 @@ gulp.task('styles', () => {
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('lint:css', () => {
+  return gulp.src(['app/styles/**/*.css', '!app/styles/_bootstrap-grid.css'])
+    .pipe($.plumber())
+    .pipe($.stylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }))
+  ;
 });
 
 gulp.task('scripts', () => {
