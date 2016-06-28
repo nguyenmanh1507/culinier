@@ -7,6 +7,12 @@
       {
         "ignore": ["attribute"]
       }
+    ],
+    "selector-class-pattern": [
+      "^(?!(js\\-))[a-z(\\-||__)0-9]+$",
+      {
+        "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)"
+      }
     ]
   }
 }
