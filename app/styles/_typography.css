@@ -31,13 +31,13 @@
 .text-red { color: $colorRed; }
 .text-orange { color: $colorPrimary !important; }
 
-/* Lists */
-/* List has underline */
+/* Lists
+ * List has underline */
 .list-underline {
-  @extend remove-mpd;
+  @mixin remove-mpd;
 
   li {
-    padding: .8em 0;
+    padding: 0.8em 0;
 
     border-bottom: 1px solid $colorBorder;
   }
@@ -49,7 +49,7 @@
 
 /* List inline */
 .list-inline {
-  @extend remove-mpd;
+  @mixin remove-mpd;
 
   li {
     display: inline-block;
@@ -70,7 +70,7 @@
     list-style-type: none;
   }
 
-  @extend remove-mpd;
+  @mixin remove-mpd;
 
   li {
     position: relative;
@@ -78,11 +78,10 @@
     margin-bottom: calc($base / 2);
 
     &::before {
-      content: '\2022';
+      margin-right: calc($base / 2);
 
       color: $colorPrimary;
-
-      margin-right: calc($base / 2);
+      content: '\2022';
     }
   }
 
@@ -102,12 +101,12 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  @extend remove-mpd;
-  font-weight: 600;
-  font-size: .8rem;
-  text-transform: uppercase;
+  @mixin remove-mpd;
+  clear: fix;
 
-  clear:fix;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
 
   li {
     border-bottom: 1px solid $colorBorder;
@@ -131,9 +130,9 @@
 
 /* list Striped */
 .list-striped {
-  font-size: calc($base * .8);
+  font-size: calc($base * 0.8);
 
-  @extend remove-mpd;
+  @mixin remove-mpd;
 
   li {
     padding: $base;
@@ -149,9 +148,9 @@
 
   :first-child {
     font-size: calc($base * 1.2);
-    text-transform: uppercase;
     font-weight: 700;
     color: $colorWhite;
+    text-transform: uppercase;
 
     background: $colorMineShaft;
   }
@@ -159,14 +158,14 @@
 
 /* List Comments */
 @b list-comment {
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   list-style: none;
 
   ul {
-    list-style: none;
     padding-left: calc($base * 2);
+    list-style: none;
   }
 
   li {
@@ -175,8 +174,6 @@
     counter-increment: step-counter;
 
     &::before {
-      content: counter(step-counter);
-
       position: absolute 10px auto auto auto;
 
       display: inline-block;
@@ -185,8 +182,9 @@
 
       font-size: calc($base * 1.2);
       font-weight: 700;
-      color: $colorScorpion;
       line-height: 80px;
+      color: $colorScorpion;
+      content: counter(step-counter);
 
       background: $colorGrayLight;
       border-radius: 50%;
@@ -202,12 +200,12 @@
 
     display: inline-block;
     size: 100px;
-    margin-left: calc($base * 3);
     margin-bottom: calc($base / 2);
+    margin-left: calc($base * 3);
 
-    border-radius: 50%;
-    border: 2px solid $colorWhite;
     overflow: hidden;
+    border: 2px solid $colorWhite;
+    border-radius: 50%;
 
     img {
       width: 100%;
@@ -236,7 +234,6 @@
 }
 
 @media (--medium-up) {
-
   .list-comment__avatar {
     position: absolute;
   }
@@ -247,15 +244,14 @@
 
   .list-comment__meta,
   .list-comment__content {
-    margin-left: calc($base * 6);
-    padding-left: calc($base * 4);
     padding-right: $base;
+    padding-left: calc($base * 4);
+    margin-left: calc($base * 6);
   }
 }
 
 /* Table Stripe */
 .table-striped {
-
   th,
   td {
     padding: calc($base / 2);

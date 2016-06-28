@@ -38,7 +38,14 @@
   &::before {
     content: '';
     position: absolute 0;
-    
+
     background: rgba($colorBlack, .6);
   }
+}
+
+/* Remove padding and margin and dot */
+@define-mixin remove-mpd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
