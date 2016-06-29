@@ -6,8 +6,8 @@
     display: block;
     margin: 0 auto $base;
 
-    border-radius: 50%;
     border: calc($base / 2) solid $colorGrayLight;
+    border-radius: 50%;
   }
 
   @e meta {
@@ -39,34 +39,33 @@
   }
 
   @e sub-h {
-    font-size: calc($base * .8);
+    font-size: calc($base * 0.8);
   }
 
   @e desc {
     position: relative;
 
-    margin-top: calc($base * 1.2);
     padding: $base calc($base / 2);
+    margin-top: calc($base * 1.2);
 
-    font-size: calc($base * .8);
+    font-size: calc($base * 0.8);
     text-align: left;
 
     background: $colorGrayLight;
 
     &::before {
-      content: '';
-
       position: absolute;
       bottom: 100%;
       left: 50%;
-      transform: translateX(-50%);
 
-      triangle: right-iso pointing-up;
       height: $base;
+
+      content: '';
       background-color: $colorGrayLight;
+      transform: translateX(-50%);
     }
 
-    @media (--medium-up) {
+    @media (min-width: $bpMedium)) {
       padding: calc($base * 1.5) $base;
     }
   }
@@ -77,8 +76,8 @@
   @b avatar {
 
     @e img:hover + .avatar__meta {
-      opacity: 1;
       visibility: visible;
+      opacity: 1;
     }
 
     @e meta {
@@ -86,22 +85,23 @@
 
       width: 100%;
 
-      opacity: 0;
       visibility: hidden;
+      opacity: 0;
       transition: $transition;
       transform: translateX(-50%);
 
       &:hover {
-        opacity: 1;
         visibility: visible;
+        opacity: 1;
       }
 
       &::before {
-        content: '';
         position: absolute 100% auto auto 50%;
 
         triangle: right-iso pointing-down;
         width: 12px;
+
+        content: '';
         background-color: $colorText;
         transform: translateX(-50%);
       }
