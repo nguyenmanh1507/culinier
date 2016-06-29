@@ -58,10 +58,13 @@
       bottom: 100%;
       left: 50%;
 
-      height: $base;
-
+      width: 0;
+      height: 0;
       content: '';
-      background-color: $colorGrayLight;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 0 $base $base;
+      border-bottom-color: $colorGrayLight;
       transform: translateX(-50%);
     }
 
