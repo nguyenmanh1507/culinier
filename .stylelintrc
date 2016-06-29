@@ -5,7 +5,7 @@
     "selector-no-qualifying-type": [
       true,
       {
-        "ignore": ["attribute"]
+        "ignore": ["attribute", "class"]
       }
     ],
     "selector-class-pattern": [
@@ -13,6 +13,7 @@
       {
         "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)"
       }
-    ]
+    ],
+    "max-nesting-depth": 4
   }
 }
