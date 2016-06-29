@@ -1,4 +1,2 @@
-@import "extends";
-@import "mixins";
-@import "layout";
-@import "misc";
+@import 'layout';
+@import 'misc';

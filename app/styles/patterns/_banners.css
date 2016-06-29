@@ -1,15 +1,14 @@
 @b banner {
   padding: calc($base * 5) 0;
 
-  background: $colorTextLight;
-
   text-align: center;
+
+  background: $colorTextLight;
 
   @mixin hem;
 
   /* Make content stack on top cover */
-  @e h,
-  .bc {
+  @e h, .bc {
     position: relative;
     z-index: 5;
   }
@@ -26,7 +25,7 @@
     @mixin cover;
   }
 
-  &[class*="bg"] {
+  &[class*='bg'] {
     background-size: cover;
   }
 

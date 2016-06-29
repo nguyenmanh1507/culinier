@@ -7,7 +7,7 @@
 
     img {
       width: 100%;
-      
+
       vertical-align: bottom;
     }
   }
@@ -16,12 +16,12 @@
     display: block;
     padding: 0.8em 1.5em;
 
-    color: $colorText;
-    font-size: calc($base * .8);
+    font-size: calc($base * 0.8);
     font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
+    color: $colorText;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 
     background: $colorWhite;
     border-bottom: 1px solid $colorBorder;
@@ -37,7 +37,7 @@
   @e under {
     padding: $base;
 
-    font-size: calc($base * .8);
+    font-size: calc($base * 0.8);
 
     a {
       color: $colorText;
@@ -66,11 +66,12 @@
     display: flex;
     flex-wrap: wrap;
 
-    list-style: none;
     padding: 0;
     margin: 0;
 
     color: $colorTextLight;
+
+    list-style: none;
 
     li:not(:last-child) {
       margin-bottom: calc($base / 2);
@@ -87,17 +88,16 @@
 
   /* Card has no border */
   @m nb {
-    border: none;
+    border: 0;
 
     .card__under {
-      padding-left: 0;
       padding-right: 0;
+      padding-left: 0;
     }
   }
 
   /* Card with text center */
   @m center {
-
     .card__under {
       text-align: center;
     }
@@ -116,8 +116,8 @@
       &:hover {
         .card__thumb::before,
         .card__cta-group {
-          opacity: 1;
           visibility: visible;
+          opacity: 1;
         }
       }
     }
@@ -127,20 +127,19 @@
 
       text-align: center;
 
-      transform: translate(-50%, -50%);
-      opacity: 0;
       visibility: hidden;
+      opacity: 0;
       transition: $transition;
+      transform: translate(-50%, -50%);
     }
 
     @e thumb::before {
-      content: '';
-
       position: absolute 0;
 
+      visibility: hidden;
+      content: '';
       background: rgba($colorPrimary, 0.5);
       opacity: 0;
-      visibility: hidden;
       transition: $transition;
     }
 
@@ -148,8 +147,8 @@
       display: inline-block;
       width: 100%;
 
+      border-bottom: 0;
       border-radius: calc($base * 2);
-      border-bottom: none;
 
       &:not(:last-child) {
         margin-bottom: $base;

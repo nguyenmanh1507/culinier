@@ -17,8 +17,8 @@
     margin-bottom: $base;
 
     color: $colorWhite;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 
     background: $colorBlue;
 
@@ -38,7 +38,6 @@
   @m a {
     background: $colorGrayLight;
   }
-
 
   @media (--medium-up) {
     padding: calc($base * 2);

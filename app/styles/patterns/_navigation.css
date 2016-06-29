@@ -2,19 +2,19 @@
   font-family: $fontSecondary;
 
   a {
+    font-weight: 700;
     color: $colorWhite;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
   }
 
   /* Hamburger menu */
   @e ham {
     position: relative;
 
+    float: right;
     size: 40px 24px;
     margin-top: $base;
-    float: right;
 
     cursor: pointer;
 
@@ -39,10 +39,9 @@
     }
 
     &.is-nav-open {
-
       .site-nav__ham-inner {
-        transform: translateX(-100%);
         opacity: 0;
+        transform: translateX(-100%);
       }
 
       &::before {
@@ -62,18 +61,18 @@
   @e ham-inner {
     position: absolute;
     top: 50%;
-    margin-top: -2px;
 
+    margin-top: -2px;
     size: 100% 4px;
 
     background: $colorWhite;
-    border: none;
+    border: 0;
     transition: $transition;
   }
 
   @e brand {
-    margin: 0;
     float: left;
+    margin: 0;
 
     @media (--nav-desktop) {
       flex-grow: 1;
@@ -85,9 +84,9 @@
   }
 
   @e list {
+    display: none;
     padding: $base 0 0;
     margin: 0;
-    display: none;
 
     &.is-show {
       display: block;
@@ -110,9 +109,9 @@
         > a::after {
           margin-left: calc($base / 2);
 
-          font-family: 'FontAwesome';
-          content: '\f0d7';
+          font-family: FontAwesome;
           color: $colorPrimary;
+          content: '\f0d7';
         }
       }
     }
@@ -122,8 +121,8 @@
       justify-content: space-between;
 
       > li {
-        margin-left: calc($base * 2);
         margin-bottom: 0;
+        margin-left: calc($base * 2);
       }
     }
   }

@@ -3,9 +3,9 @@
   @e header {
     padding: calc($base * 2) calc($base / 2);
 
+    font-weight: 700;
     color: $colorWhite;
     text-align: center;
-    font-weight: 700;
   }
 
   @e content {
@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
 
-    font-size: calc($base * .8);
+    font-size: calc($base * 0.8);
     color: $colorTextLight;
 
     a {
@@ -67,8 +67,8 @@
   @e addon {
     padding: $base calc($base / 2);
 
+    font-size: calc($base * 0.8);
     text-align: center;
-    font-size: calc($base * .8);
 
     a {
       color: $colorTextLight;
@@ -80,9 +80,9 @@
     padding: calc($base / 2);
     margin-top: $base;
 
-    color: $colorText;
     font-size: calc($base * 1.5);
     font-weight: 700;
+    color: $colorText;
     text-decoration: underline;
 
     background: color($colorPrimary a(20%));
@@ -114,14 +114,13 @@
       color: $colorTextLight;
 
       &::before {
-        content: '-';
         margin-right: calc($base / 2);
+        content: '-';
       }
     }
   }
 
   @e embed {
-
     iframe {
       width: 100%;
     }
@@ -129,81 +128,70 @@
 
   /* Brick has background */
   @m bg {
-
     .brick__content {
-      padding-left: calc($base / 2);
       padding-right: calc($base / 2);
+      padding-left: calc($base / 2);
 
       background: $colorGrayLight;
     }
 
     @media (--medium-up) {
-
       .brick__content {
-        padding-left: calc($base * 2);
         padding-right: calc($base * 2);
+        padding-left: calc($base * 2);
       }
     }
   }
 
   @m a {
-
     .brick__header {
       background: $colorAside;
     }
   }
 
   @m b {
-
     .brick__header {
       background: $colorGallery;
     }
   }
 
   @m c {
-
     .brick__header {
       background: $colorLink;
     }
   }
 
   @m d {
-
     .brick__header {
       background: $colorImage;
     }
   }
 
   @m e {
-
     .brick__header {
       background: $colorQuote;
     }
   }
 
   @m f {
-
     .brick__header {
       background: $colorStatus;
     }
   }
 
   @m g {
-
     .brick__header {
       background: $colorVideo;
     }
   }
 
   @m h {
-
     .brick__header {
       background: $colorAudio;
     }
   }
 
   @m i {
-
     .brick__header {
       background: $colorChat;
     }

@@ -38,7 +38,7 @@
 }
 
 .site-footer-nav {
-  @extend remove-mpd;
+  @mixin remove-mpd;
 
   font-size: 0.8rem;
   font-weight: 700;

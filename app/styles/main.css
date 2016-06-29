@@ -1,16 +1,17 @@
-
 @import 'settings';
 @import 'base';
-@import 'helpers/all';
-
+@import 'mixins';
 @import 'typography';
 @import 'bootstrap-grid';
 @import 'sites';
 @import 'patterns/all';
+@import 'helpers/all';
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
   padding: 0.2em 0;
+  margin: 0.2em 0;
+
+  color: #000;
+
+  background: #ccc;
 }

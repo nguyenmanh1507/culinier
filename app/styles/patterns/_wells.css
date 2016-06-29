@@ -29,7 +29,7 @@
   }
 }
 
-.well[class*="bg"] {
+.well[class*='bg'] {
   background-size: cover;
 
   @mixin cover;

@@ -7,25 +7,23 @@
     display: inline-block;
     margin-bottom: calc($base / 4);
 
-    font-size: responsive 0.75rem 1rem;
     font-range: $bpSmall $bpMedium;
+    font-size: responsive 0.75rem 1rem;
     font-weight: 700;
     vertical-align: top;
 
     /* Fake checkbox */
     &.label-checkbox::before {
-      content: '';
-      font-family: 'FontAwesome';
-
       display: inline-block;
       size: $base;
       margin-right: calc($base / 2);
 
-
-      font-size: calc($base * .8);
-      text-align: center;
+      font-family: FontAwesome;
+      font-size: calc($base * 0.8);
       color: $colorPrimary;
+      text-align: center;
       vertical-align: top;
+      content: '';
 
       background: $colorWhite;
       border: 1px solid $colorBorder;
@@ -57,8 +55,8 @@
   @e control {
     display: block;
     width: 100%;
-    margin-bottom: calc($base / 4);
     padding: calc($base / 2);
+    margin-bottom: calc($base / 4);
 
     background: $colorWhite;
     border: 1px solid $colorBorder;
@@ -86,8 +84,8 @@
 
       font-weight: 700;
 
-      transform: translate(-50%, -50%);
       background: $colorGrayLight;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -131,7 +129,6 @@
   .twitter {
     background: #00aced;
   }
-  /* End */
 
   @media (--medium-up) {
     padding: calc($base * 2);
@@ -145,12 +142,12 @@
 /* File upload style for Webkit */
 ::-webkit-file-upload-button {
   display: block;
-  margin: -7px;
   height: 38px;
+  margin: -7px;
 
   color: $colorWhite;
 
-  background: $colorText;
-  border: none;
   cursor: pointer;
+  background: $colorText;
+  border: 0;
 }

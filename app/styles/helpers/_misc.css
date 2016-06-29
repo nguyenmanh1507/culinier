@@ -12,7 +12,7 @@
 }
 
 .img-border {
-  border: .8em solid $colorBorder;
+  border: 0.8em solid $colorBorder;
 }
 
 /* Float div with difference height */
@@ -39,17 +39,17 @@
 .square {
   size: 100px;
 
-  color: $colorWhite;
-  text-align: center;
   font-size: calc($base * 3);
   font-weight: 700;
   line-height: 100px;
+  color: $colorWhite;
+  text-align: center;
   text-transform: uppercase;
 
-  background: $colorPrimary
+  background: $colorPrimary;
 }
 
 /* Google Map style */
-#gMap {
+.gmap {
   height: 460px;
 }

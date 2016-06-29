@@ -19,10 +19,11 @@
       margin-right: calc($base / 2);
 
       &::after {
-        content: '/';
         padding-left: calc($base / 2);
 
-        font-size: .8rem;
+        font-size: 0.8rem;
+
+        content: '/';
       }
     }
   }

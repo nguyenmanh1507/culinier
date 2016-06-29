@@ -1,35 +1,31 @@
 .pagination {
-
   a,
   span {
     display: inline-block;
     size: 48px;
     margin: calc($base / 2);
 
-    text-align: center;
-    line-height: 46px;
     font-weight: 700;
+    line-height: 46px;
     color: $colorPrimary;
+    text-align: center;
 
-    border-radius: 50%;
     border: 1px solid $colorPrimary;
+    border-radius: 50%;
     transition: $transition;
+
+    &:focus,
+    &:hover {
+      color: $colorWhite;
+
+      background: $colorPrimary;
+      border-color: $colorPrimary;
+    }
   }
 
   span {
     color: $colorTextLight;
 
     border-color: $colorTextLight;
-  }
-
-  a,
-  span {
-    &:focus,
-    &:hover {
-      color: $colorWhite;
-
-      background: $colorPrimary;
-      border-color: $colorPrimary
-    }
   }
 }

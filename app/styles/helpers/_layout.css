@@ -8,15 +8,10 @@
 
   /* equal width */
   @m ew {
-
     > div {
       flex-grow: 1;
     }
   }
-
-  /*@media (--medium-up) {
-    flex-wrap: nowrap;
-  }*/
 }
 
 /* Alignment Shifting Wrapping */
@@ -25,7 +20,6 @@
   flex-wrap: wrap;
 
   @e item {
-
     &:first-child {
       flex-grow: 1;
       padding-right: $base;

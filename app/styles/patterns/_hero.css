@@ -23,8 +23,9 @@
   z-index: 5;
 
   &::before {
-    content: '';
     position: absolute 0;
+
+    content: '';
 
     background: color($colorBlack a(40%));
   }
@@ -44,19 +45,19 @@
 .carousel-h {
   margin: 0;
 
-  font-size: responsive 24px 64px;
   font-range: $bpSmall $bpLarge;
+  font-size: responsive 24px 64px;
   font-weight: 800;
 }
 
 .carousel-sub-h {
   margin: $base 0 calc($base * 2);
 
+  font-range: $bpSmall $bpMedium;
   font-family: $fontSpecial;
   font-size: responsive 0.8rem 1.13rem;
-  font-range: $bpSmall $bpMedium;
-  text-transform: uppercase;
   font-style: italic;
+  text-transform: uppercase;
 }
 
 .slick-arrow,
@@ -72,8 +73,8 @@
 
   color: $colorWhite;
 
-  border: none;
   background: color($colorBlack a(80%));
+  border: 0;
   transform: translateY(-50%);
 }
 
@@ -89,8 +90,8 @@
   bottom: calc($base * 1.5);
 
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   text-align: center;
 
@@ -101,11 +102,11 @@
     size: 9px;
     margin: 0 calc($base / 2);
 
-    border-radius: 50%;
     background: $colorWhite;
+    border-radius: 50%;
 
     button {
-      @extend sr-only;
+      @mixin sr-only;
     }
 
     &:hover {

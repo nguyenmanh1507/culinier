@@ -5,8 +5,8 @@
 
     color: $colorWhite;
 
-    background: $colorText;
     cursor: pointer;
+    background: $colorText;
   }
 
   @e title {
@@ -15,21 +15,20 @@
     &::after {
       float: right;
 
-      font-family: 'FontAwesome';
+      font-family: FontAwesome;
       content: '\f067';
 
     }
   }
 
   @e body {
-    padding: $base;
     display: none;
+    padding: $base;
 
     border: 1px solid $colorBorder;
   }
 
   &.is-show {
-
     .acc__title::after {
       content: '\f068';
     }

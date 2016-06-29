@@ -1,16 +1,16 @@
 @b tab {
 
   @e nav {
-    margin: 0;
     padding: 0;
-    list-style: none;
+    margin: 0;
 
     clear: fix;
+
+    list-style: none;
 
     border-bottom: 4px solid $colorText;
 
     li {
-
       a {
         display: block;
         padding: $base;
@@ -28,7 +28,6 @@
       }
 
       &.active {
-
         a {
           color: $colorWhite;
 
@@ -53,19 +52,19 @@
   }
 
   @e pane {
-    opacity: 0;
     display: none;
 
+    opacity: 0;
     transition: $transition;
 
     &.active {
-      opacity: 1;
       display: block;
+
+      opacity: 1;
     }
   }
 
   @m bg {
-
     .tab__nav {
       border: 1px solid $colorBorder;
 
@@ -94,17 +93,15 @@
     }
 
     .tab__content {
-      border-top: none;
-
       background: $colorGrayLight;
+      border-top: 0;
     }
   }
 
   /* Remove last underline */
   .list-underline {
-
     li:last-child {
-      border-bottom: none;
+      border-bottom: 0;
     }
   }
 }
