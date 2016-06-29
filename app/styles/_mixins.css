@@ -15,13 +15,12 @@
   &::after {
     position: absolute;
     left: 0;
+    z-index: 5;
 
-    content: '';
     size: 100% 1px;
 
+    content: '';
     background-image: repeating-linear-gradient(90deg, color($colorWhite a(50%)), color($colorWhite a(50%)) 8px, transparent 8px, transparent 16px);
-
-    z-index: 5;
   }
 
   &::before {
@@ -36,16 +35,28 @@
 /* Transparent bg for improve readable */
 @define-mixin cover {
   &::before {
-    content: '';
     position: absolute 0;
 
-    background: rgba($colorBlack, .6);
+    content: '';
+    background: rgba($colorBlack, 0.6);
   }
+}
+
+/* Screen reader */
+@define-mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* Remove padding and margin and dot */
 @define-mixin remove-mpd {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
