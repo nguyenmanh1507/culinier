@@ -32,6 +32,7 @@
     "postcss-assets": "^4.1.0",
     "postcss-at2x": "^2.0.0",
     "postcss-bem": "^0.4.1",
+    "postcss-calc": "^5.3.0",
     "postcss-custom-media": "^5.0.1",
     "postcss-font-magician": "^1.4.0",
     "postcss-nested": "^1.0.0",

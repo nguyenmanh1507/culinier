@@ -724,7 +724,7 @@
 .invisible {
   visibility: hidden;
 }
-.text-hide {
+.txt-hide {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;

@@ -1,35 +1,35 @@
-.text-large {
+.txt-large {
   font-size: 1.563rem; /* equal h2 font-size */
 }
 
-.text-small {
+.txt-small {
   font-size: 0.8rem; /* equal h5,h6 font-size */
 }
 
-.text-light {
+.txt-light {
   color: $colorTextLight;
 }
 
-.text-bold {
+.txt-bold {
   font-weight: 700;
 }
 
-.text-invert-color {
+.txt-invert-color {
   color: $colorWhite;
 }
 
-.text-uppercase {
+.txt-uppercase {
   text-transform: uppercase;
 }
 
-.text-center { text-align: center; }
+.txt-center { text-align: center; }
 
 /* Text with colors */
-.text-dark { color: $colorText; }
-.text-blue { color: $colorBlue; }
-.text-green { color: $colorGreen; }
-.text-red { color: $colorRed; }
-.text-orange { color: $colorPrimary !important; }
+.txt-dark { color: $colorText; }
+.txt-blue { color: $colorBlue; }
+.txt-green { color: $colorGreen; }
+.txt-red { color: $colorRed; }
+.txt-orange { color: $colorPrimary !important; }
 
 /* Lists
  * List has underline */

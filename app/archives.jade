@@ -4,21 +4,21 @@ block content
 
   .banner.banner--bg-a
     h2.banner__h Archives Page
-    
+
     //- patterns_library/breadcrumb
     .bc
       a.bc__item(href="#") Home
       span.bc__item Archives
-    
+
     .banner__cover
-    
+
   .well
     .container
       .row
         .col-sm-12.col-md-8
           .page-header
             h2 Health
-            
+
           ul.list-underline
             - var n = 1
             while n < 9
@@ -27,12 +27,12 @@ block content
                   .media__left
                     a(href="#"): img(src="http://placehold.it/200x200", alt="Image#{n++}")
                   .media__body
-                    a.text-orange.text-uppercase.text-small(href="#") Health
-                    h3.text-large: a.text-dark(href="#") Lorem ipsum dolor sit amet.
-                    p.text-small
+                    a.txt-orange.txt-uppercase.txt-small(href="#") Health
+                    h3.txt-large: a.txt-dark(href="#") Lorem ipsum dolor sit amet.
+                    p.txt-small
                       | Posted on <time datetime="2016-06-06">September 20, 2016</time>
-                    p.text-small.text-light
+                    p.txt-small.txt-light
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto consequuntur esse illo, autem assumenda optio mollitia soluta possimus totam excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae perspiciatis eveniet aut corporis esse hic ut, illo nam?
-        
+
         .col-sm-12.col-md-4
           include includes/sidebar

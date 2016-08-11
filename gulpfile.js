@@ -38,8 +38,10 @@ gulp.task('styles', ['lint:css'], () => {
     shortSize    = require('postcss-short-size'),
     triangle     = require('postcss-triangle'),
     rucksack     = require('rucksack-css'),
+    calc         = require('postcss-calc'),
     processors   = [
       precss,
+      calc,
       assets({
         loadPaths: ['images/'],
         basePath: 'app',
