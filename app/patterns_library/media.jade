@@ -6,14 +6,18 @@ block content
       .col-xs-12
         h2 Media
 
-        .media
-          .media__left
-            a(href="#"): img(src="http://placehold.it/60x60", alt="Image#{i++}")
-          .media__body
-            a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima.
-            p.txt-light
-              i.fa.fa-star.txt-orange
-              i.fa.fa-star.txt-orange
-              i.fa.fa-star.txt-orange
-              i.fa.fa-star.txt-orange
-              i.fa.fa-star
+      .row
+        - var i = 0
+        while i < 3
+          .col-xs-4
+            .media
+              .media__left
+                a(href="#"): img(src="http://placehold.it/60x60", alt="Image#{i++}")
+              .media__body
+                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima.
+                p.txt-light
+                  i.fa.fa-star.txt-orange
+                  i.fa.fa-star.txt-orange
+                  i.fa.fa-star.txt-orange
+                  i.fa.fa-star.txt-orange
+                  i.fa.fa-star

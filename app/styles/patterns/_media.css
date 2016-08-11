@@ -1,6 +1,5 @@
 @b media {
-  display: flex;
-  flex-wrap: wrap;
+  clear: fix;
 
   h1,
   h2,
@@ -12,14 +11,11 @@
   }
 
   @e left {
-    margin-right: $base;
+    float: left;
+    margin-right: 1rem;
   }
 
   @e body {
-    flex-grow: 1;
-  }
-
-  @media (--small-up) {
-    flex-wrap: nowrap;
+    display: table-cell;
   }
 }
